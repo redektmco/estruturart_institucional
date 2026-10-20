@@ -1,9 +1,8 @@
 import { useLayoutEffect } from 'react'
 
 const revealSelector = [
-  '.header', '.hero-art', '.hero-copy > *',
-  '.product-copy > *', '.product-image', '.golden > *',
-  '.services > h2', '.service-card', '.slider-controls',
+  '.header', '.hero-copy > *', '.section-head > *',
+  '.product', '.golden > *', '.service-card',
   '.history h2', '.history p', '.founder', '.app-art', '.app-copy > *',
   '.benefits-list article', '.benefits-image', '.contact-copy > *',
   '.contact form > *', '.faq h2', '.faq details', '.footer-columns > *',
@@ -37,7 +36,7 @@ export function useSiteMotion(routeKey = '/') {
         if (element.dataset.reveal !== 'pending') return
         element.dataset.reveal = 'running'
         const delay = immediate ? 0 : Number(element.dataset.motionDelay || 0)
-        const isArt = element.matches('.hero-art, .product-image, .founder, .app-art, .benefits-image, .golden > img, .service-card, .inner-visual, .golden-coin')
+        const isArt = element.matches('.product, .founder, .app-art, .benefits-image, .golden > img, .service-card, .inner-visual, .golden-coin')
         const offset = element.matches('.header') ? -14 : isArt ? 40 : 26
         const animation = element.animate([
           { opacity: 0, filter: `blur(${isArt ? 14 : 9}px)`, transform: `translate3d(0, ${offset}px, 0) scale(${isArt ? .965 : 1})` },
@@ -53,7 +52,7 @@ export function useSiteMotion(routeKey = '/') {
       const observer = new IntersectionObserver(entries => {
         for (const entry of entries) {
           const element = entry.target as HTMLElement
-          if (element.matches('.hero-art, .app-art, .golden, .golden-coin')) element.dataset.inView = String(entry.isIntersecting)
+          if (element.matches('.app-art, .golden, .golden-coin')) element.dataset.inView = String(entry.isIntersecting)
           if (entry.isIntersecting) reveal(element)
         }
       }, { threshold: .08, rootMargin: '0px 0px -24px 0px' })
@@ -95,7 +94,7 @@ export function useSiteMotion(routeKey = '/') {
         frame = requestAnimationFrame(() => {
           frame = 0
           if (!pendingPointer || !(pendingPointer.target instanceof Element)) return
-          const surface = pendingPointer.target.closest<HTMLElement>('.hero-art, .service-card, .golden')
+          const surface = pendingPointer.target.closest<HTMLElement>('.service-card, .golden')
           if (surface !== activeSurface) resetSurface()
           if (!surface) return
           activeSurface = surface

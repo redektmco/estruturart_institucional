@@ -1,6 +1,16 @@
 # Estruturart — site institucional
 
-Implementação em React, TypeScript e Vite baseada no arquivo `DESKTOP.pdf` fornecido pelo usuário. Imagens originais extraídas do PDF e otimizadas em WebP em `public/images`. O layout mobile adapta a composição desktop, pois não foi fornecido um frame mobile.
+Implementação em React, TypeScript e Vite baseada no arquivo `DESKTOP.pdf` fornecido pelo usuário, com a escala revisada a partir das referências do Inter e do Itaú Personnalité: textos de 14 a 17px, títulos de seção de 28 a 46px e um único grid de 1240px. O layout mobile adapta a composição desktop, pois não foi fornecido um frame mobile.
+
+## Imagens e fonte
+
+Todas as imagens ficam em WebP em `public/images`.
+
+- `hero.webp`: foto da campanha com o cartão Estruturart Capital, enviada pela agência.
+- `founder.webp`, `app.webp` e `logo.webp`: extraídas do PDF original. `logo-light.webp` é a versão do logo para fundos escuros, gerada a partir de `logo.webp`.
+- `recebiveis`, `capital-de-giro`, `fco-empresarial`, `conta`, `conta-escrow`, `securitizadora`, `operacoes-estruturadas`, `pay`, `app-detail`, `historia` e `golden`: fotos reais (sem IA) do banco Freepik, baixadas pela conta Premium da agência, recortadas em 4:3 e com tratamento de cor leve e uniforme.
+
+A fonte Inter é servida pelo próprio site via `@fontsource-variable/inter`, sem depender de serviços externos.
 
 ## Desenvolvimento
 
