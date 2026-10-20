@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ContactSection } from './components/ContactSection'
+import { HeroCarousel } from './components/HeroCarousel'
 import { homeProductRoutes, homeServiceRoutes } from './data/pages'
 import './App.css'
 import './motion.css'
@@ -35,10 +36,7 @@ function CTA({ children, href = '/contato', onClick, light = false }: { children
 function HomePage() {
   return <>
     <main id="principal">
-      <section className="hero" id="inicio" aria-labelledby="hero-title">
-        <img className="hero-photo" src={image('hero')} alt="Cliente segurando o cartão Estruturart Capital" width="1672" height="941" fetchPriority="high" />
-        <div className="hero-copy wide"><h1 id="hero-title">Estruturart Pay</h1><p>Antecipação de recebíveis, conta digital PJ, securitização e meios de pagamento próprios, reunidos sob a mesma governança.</p><CTA href="/quem-somos">Conhecer o grupo</CTA></div>
-      </section>
+      <HeroCarousel />
       <section className="products-section wide" id="solucoes" aria-labelledby="products-title">
         <div className="section-head"><span className="eyebrow">Soluções Estruturart</span><h2 id="products-title">O seu próximo passo.<br />A nossa estrutura.</h2></div>
         <div className="products">

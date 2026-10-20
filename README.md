@@ -7,6 +7,7 @@ Implementação em React, TypeScript e Vite baseada no arquivo `DESKTOP.pdf` for
 Todas as imagens ficam em WebP em `public/images`.
 
 - `hero.webp`: foto da campanha com o cartão Estruturart Capital, enviada pela agência.
+- `hero-retrato.webp` e `hero-cartao.webp`: fotos fornecidas em `pictures`, convertidas para WebP para os novos slides do hero.
 - `founder.webp`, `app.webp` e `logo.webp`: extraídas do PDF original. `logo-light.webp` é a versão do logo para fundos escuros, gerada a partir de `logo.webp`.
 - `recebiveis`, `capital-de-giro`, `fco-empresarial`, `conta`, `conta-escrow`, `securitizadora`, `operacoes-estruturadas`, `pay`, `app-detail`, `historia` e `golden`: fotos reais (sem IA) do banco Freepik, baixadas pela conta Premium da agência, recortadas em 4:3 e com tratamento de cor leve e uniforme.
 
@@ -70,6 +71,8 @@ Projeto Vercel: `estruturart-institucional`. Publicação realizada via API da V
 ## Animações
 
 A camada `src/useSiteMotion.ts` usa IntersectionObserver e Web Animations API para entradas com blur, fade e stagger. `src/motion.css` reúne microinterações, flutuação das ilustrações, brilho dos cards e resposta 3D ao cursor. O carrossel anima a saída e a entrada dos cards, sem avanço automático. Não há novas dependências ou wrappers de layout. Os efeitos respeitam `prefers-reduced-motion`, inclusive quando a preferência muda com a página aberta; elementos são revelados ao receber foco. Animações contínuas das ilustrações pausam fora da tela.
+
+O hero usa `src/components/HeroCarousel.tsx`, com moldura retangular arredondada e quatro slides: o conteúdo original e três chamadas para a conta digital PJ. A troca automática ocorre a cada oito segundos, com pausa explícita, setas e seleção direta por indicadores. O avanço também pausa durante hover, foco nos controles e quando a aba fica oculta. A preferência por movimento reduzido inicia o carrossel pausado. As novas chamadas levam à seção Soluções, à página Quem somos e ao contato com Conta Digital PJ selecionada.
 
 ## Páginas internas
 

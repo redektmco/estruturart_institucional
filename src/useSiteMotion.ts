@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react'
 
 const revealSelector = [
-  '.header', '.hero-copy > *', '.section-head > *',
+  '.header', '.section-head > *',
   '.product', '.golden > *', '.service-card',
   '.history h2', '.history p', '.founder', '.app-art', '.app-copy > *',
   '.benefits-list article', '.benefits-image', '.contact-copy > *',
@@ -65,7 +65,7 @@ export function useSiteMotion(routeKey = '/') {
           elements.add(element)
           const siblings = element.parentElement ? [...element.parentElement.children].filter(child => child.matches(revealSelector)) : []
           const stagger = Math.min(Math.max(siblings.indexOf(element), 0) * 105, 420)
-          element.dataset.motionDelay = String(element.closest('.hero-copy') ? stagger + 200 : stagger)
+          element.dataset.motionDelay = String(stagger)
           element.dataset.reveal = 'pending'
           observer.observe(element)
         })
