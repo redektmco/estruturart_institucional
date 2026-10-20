@@ -25,12 +25,13 @@
 /* Hero */
 .hero{position:relative;isolation:isolate;display:flex;align-items:center;width:min(1640px,calc(100% - 48px));min-height:clamp(520px,calc(100svh - var(--header-height) - 48px),680px);margin:24px auto 0;border:1px solid #252525;border-radius:28px;overflow:hidden;background:#0b0b0b;color:#fff;box-shadow:0 4px 20px #0000000a}
 .hero-photos{position:absolute;inset:0;z-index:-2}
-.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 35%;opacity:0;transition:opacity .7s ease}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .7s ease}
+.hero-photo img{width:100%;height:100%;object-fit:contain;object-position:right center}
 .hero-photo.is-active{opacity:1}
-.hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080808e6 0%,#080808a6 30%,#08080826 58%,transparent 76%),linear-gradient(0deg,#08080866,transparent 24%)}
+.hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080808 0%,#080808 14%,#080808d9 30%,#08080833 52%,transparent 70%),linear-gradient(0deg,#08080866,transparent 24%)}
 .hero::after{content:'';position:absolute;inset:14px;z-index:3;border:1px solid #ffffff52;border-radius:16px;pointer-events:none}
 .hero-content,.hero-controls{width:min(1240px,calc(100% - 96px));margin-inline:auto}
-.hero-copy{padding-block:64px 112px}
+.hero-copy{width:46%;padding-block:64px 112px}
 .hero-copy h1{max-width:560px;font-size:clamp(38px,4.1vw,58px);font-weight:500;line-height:1.06;letter-spacing:-.035em;margin-bottom:20px}
 .hero-copy h1>span{display:block}
 .hero-copy p{max-width:420px;font-size:17px;line-height:1.5;color:#e2e2e2;margin-bottom:28px}
@@ -174,6 +175,24 @@
   .faq .wide{display:block}.faq h2{margin-bottom:16px}
   .footer-columns{grid-template-columns:1fr 1fr;gap:28px}
 }
+@media(max-width:760px){
+  .hero{display:block;width:calc(100% - 24px);min-height:0;margin-top:12px;border-radius:24px;background:#080808}
+  .hero::after{inset:9px;border-radius:15px}
+  .hero-photos{position:relative;inset:auto;aspect-ratio:6/5}
+  .hero-photo img{object-position:center}
+  .hero::before{inset:0 0 auto;aspect-ratio:6/5;background:linear-gradient(0deg,#080808,transparent 22%)}
+  .hero-content,.hero-controls{width:calc(100% - 48px)}
+  .hero-copy{width:100%;padding-block:8px 102px}
+  .hero-copy h1{max-width:560px;font-size:clamp(30px,5vw,38px);margin-bottom:14px}
+  .hero-copy p{max-width:460px;font-size:15px;margin-bottom:22px}
+  .hero-controls{bottom:24px;gap:8px}
+  .hero-dot{min-width:26px;padding-inline:4px}
+  .hero-dot.is-active>span{width:22px}
+  .hero-control{width:40px;height:40px}
+  .hero-actions{gap:6px}
+  .hero-pause{margin-right:2px}
+  .hero-count{font-size:11px}
+}
 @media(max-width:600px){
   .content,.wide{width:calc(100% - 32px)}
   .header{padding-inline:16px;gap:8px 10px}
@@ -182,22 +201,6 @@
   .menu-toggle{width:36px}
   .cta{min-height:40px;padding-left:18px;font-size:14px}.arrow{width:28px;height:28px;font-size:16px}
   .section-head{margin-bottom:20px}
-  .hero{align-items:flex-end;width:calc(100% - 24px);min-height:660px;margin-top:12px;border-radius:24px}
-  .hero::after{inset:9px;border-radius:15px}
-  .hero-photo{height:72%;object-position:72% 22%}
-  .hero-photo-card{object-position:86% 12%}
-  .hero::before{background:linear-gradient(0deg,#080808 0%,#080808 25%,#080808d9 44%,#08080826 69%,transparent 90%)}
-  .hero-content,.hero-controls{width:calc(100% - 48px)}
-  .hero-copy{padding-block:220px 102px}
-  .hero-copy h1{max-width:360px;font-size:clamp(30px,7.8vw,38px);margin-bottom:14px}
-  .hero-copy p{max-width:360px;font-size:15px;margin-bottom:22px}
-  .hero-controls{bottom:24px;gap:8px}
-  .hero-dot{min-width:26px;padding-inline:4px}
-  .hero-dot.is-active>span{width:22px}
-  .hero-control{width:40px;height:40px}
-  .hero-actions{gap:6px}
-  .hero-pause{margin-right:2px}
-  .hero-count{font-size:11px}
   .products{grid-template-columns:1fr;gap:12px}
   .product-image{aspect-ratio:16/9}
   .product-copy{padding:20px 20px 22px}

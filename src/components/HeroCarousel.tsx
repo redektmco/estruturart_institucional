@@ -9,8 +9,9 @@ const slides = [
     description: 'Mais praticidade, autonomia e soluções financeiras que acompanham a evolução da sua empresa.',
     cta: 'Conheça nossas soluções',
     href: '/#solucoes',
-    image: '/images/hero-cartoes.webp',
-    alt: 'Cartões Estruturart Capital com iluminação vermelha',
+    image: '/images/hero-cartao-premium.webp',
+    mobileImage: '/images/hero-cartao-premium-mobile.webp',
+    alt: 'Cartão preto Estruturart Capital com iluminação laranja',
     width: 1672,
     height: 941,
   },
@@ -21,6 +22,7 @@ const slides = [
     cta: 'Abra sua conta',
     href: '/contato?produto=Conta%20Digital%20PJ',
     image: '/images/hero-celular.webp',
+    mobileImage: '/images/hero-celular-mobile.webp',
     alt: 'Conta digital Estruturart Capital no celular e cartão nas mãos de uma cliente',
     width: 1672,
     height: 941,
@@ -32,6 +34,7 @@ const slides = [
     cta: 'Descubra a Estruturart',
     href: '/quem-somos',
     image: '/images/hero-cartao.webp',
+    mobileImage: '/images/hero-cartao-mobile.webp',
     alt: 'Cartão Estruturart Capital no bolso de uma calça jeans. A conta digital que descomplica o seu negócio.',
     width: 1920,
     height: 1080,
@@ -84,16 +87,20 @@ export function HeroCarousel() {
     onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false) }}
   >
     <div className="hero-photos" aria-hidden="true">
-      {slides.map((item, index) => <img
+      {slides.map((item, index) => <picture
         key={item.image}
-        className={`hero-photo${item.image === slide.image ? ' is-active' : ''}${item.id === 'cartao-bolso' ? ' hero-photo-card' : ''}`}
-        src={item.image}
-        alt=""
-        width={item.width}
-        height={item.height}
-        fetchPriority={index === 0 ? 'high' : 'low'}
-        loading="eager"
-      />)}
+        className={`hero-photo${item.image === slide.image ? ' is-active' : ''}`}
+      >
+        <source media="(max-width: 760px)" srcSet={item.mobileImage} width="960" height="800" />
+        <img
+          src={item.image}
+          alt=""
+          width={item.width}
+          height={item.height}
+          fetchPriority={index === 0 ? 'high' : 'low'}
+          loading="eager"
+        />
+      </picture>)}
     </div>
     <div className="hero-content" aria-live={paused || hovered || focused ? 'polite' : 'off'} aria-atomic="true">
       <div className="hero-copy" key={slide.id} role="group" aria-roledescription="slide" aria-label={`${active + 1} de ${slides.length}`}>
