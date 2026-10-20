@@ -1,0 +1,83 @@
+# Estruturart — site institucional
+
+Implementação em React, TypeScript e Vite baseada no arquivo `DESKTOP.pdf` fornecido pelo usuário. Imagens originais extraídas do PDF e otimizadas em WebP em `public/images`. O layout mobile adapta a composição desktop, pois não foi fornecido um frame mobile.
+
+## Desenvolvimento
+
+Requer Node.js 24 e npm 11.
+
+```sh
+cd /workspace/estruturart_institucional
+npm ci --cache /workspace/.npm-cache --no-audit --no-fund
+npm run dev -- --host 0.0.0.0 --port 5173 --strictPort
+```
+
+## Validação e produção
+
+```sh
+npm run lint
+npm run build
+npm run preview -- --host 0.0.0.0 --port 4173 --strictPort
+```
+
+O build é gerado em `dist/` e pode ser servido como site estático. Não são necessários backend, banco de dados ou segredos para esta versão.
+
+## Comportamento
+
+- Navegação por âncoras e menu mobile com estado acessível.
+- Detalhes dos produtos em modal com fechamento por Escape, clique fora e botão.
+- Carrossel de serviços e FAQ expansível.
+- Formulário com campos obrigatórios, validação de email e formato de CNPJ, e seleção do produto a partir dos CTAs.
+- Nenhum dado do formulário é enviado ou armazenado; o sucesso da validação informa explicitamente que se trata de uma demonstração.
+- Links externos, redes sociais, dados de contato e documentos legais permanecem como placeholders, conforme solicitado. Não há URLs ou credenciais fictícias.
+
+## Antes da publicação comercial
+
+Substituir os placeholders pelos links e contatos oficiais, aprovar os textos institucionais, os documentos legais e as respostas do FAQ; integrar o formulário ao serviço de atendimento com política de privacidade adequada. A validação de CNPJ atual verifica apenas o formato, sem consulta cadastral ou cálculo dos dígitos verificadores.
+
+## Referência
+
+Figma: https://www.figma.com/design/f4gpYefn50GMr2OY8zESVZ/ESTRUART-SITE?node-id=181-368
+
+A referência visual utilizada na implementação é o PDF desktop enviado no chat.
+
+## Deploy na Vercel
+
+A configuração `vercel.json` define o framework Vite, instalação com `npm ci`, build com `npm run build` e saída em `dist`. O arquivo `.vercelignore` exclui dependências locais, saída gerada, metadados Git e arquivos de variáveis do upload.
+
+O deploy a partir do ambiente em nuvem exige acesso HTTPS a `api.vercel.com` e autenticação da Vercel. Configure `VERCEL_TOKEN` como segredo nas configurações do ambiente, nunca no código ou no chat. A credencial é exclusiva do processo de publicação; o site não precisa dela em runtime.
+
+O projeto ainda contém os placeholders solicitados e o formulário demonstrativo. Publicar o site não ativa o envio de contatos.
+
+No sandbox, a CLI da Vercel deve usar diretórios graváveis via `XDG_DATA_HOME=/workspace/.vercel-cli/data`, `XDG_CACHE_HOME=/workspace/.vercel-cli/cache` e `XDG_CONFIG_HOME=/workspace/.vercel-cli/config`, preservando o diretório pessoal do sistema. CLI instalada e verificada: Vercel 64.5.0. O estado de autenticação verificado foi desconectado.
+
+## Publicação atual
+
+Site: https://estruturart-institucional.vercel.app
+
+Projeto Vercel: `estruturart-institucional`. Publicação realizada via API da Vercel a partir dos arquivos compilados em `dist/`, com status `READY` e acesso público. O projeto não está vinculado a deploy automático pelo GitHub; alterações futuras precisam de uma nova publicação. A configuração local de vínculo fica em `.vercel/project.json` (ignorada pelo Git).
+
+## Animações
+
+A camada `src/useSiteMotion.ts` usa IntersectionObserver e Web Animations API para entradas com blur, fade e stagger. `src/motion.css` reúne microinterações, flutuação das ilustrações, brilho dos cards e resposta 3D ao cursor. O carrossel anima a saída e a entrada dos cards, sem avanço automático. Não há novas dependências ou wrappers de layout. Os efeitos respeitam `prefers-reduced-motion`, inclusive quando a preferência muda com a página aberta; elementos são revelados ao receber foco. Animações contínuas das ilustrações pausam fora da tela.
+
+## Páginas internas
+
+A aplicação usa React Router e mantém o layout compartilhado de cabeçalho e rodapé. As rotas são:
+
+- `/`: início.
+- `/estruturart-pay`, `/antecipacao-de-recebiveis`, `/conta-digital-pj`, `/conta-escrow`, `/securitizadora`, `/capital-de-giro`, `/fco-empresarial`, `/operacoes-estruturadas`: páginas próprias de soluções.
+- `/servicos`, `/golden`: catálogo e apresentação da Golden.
+- `/quem-somos`, `/nossa-historia`, `/premiacoes`, `/na-midia`: institucional.
+- `/contato`, `/acesso`: contato e orientação sobre plataformas.
+- `/politica-de-privacidade`, `/termos-de-uso`: documentos da versão demonstrativa.
+
+`src/data/pages.ts` centraliza conteúdo e metadados. Cada solução possui descrição, benefícios, etapas, perguntas frequentes e indicações relacionadas próprias. Os links da home agora abrem as páginas correspondentes. A escolha de produto é transmitida ao contato por query string.
+
+O build executa `scripts/generate-pages.mjs` com Node.js 24, gerando um `index.html` por rota, com título, descrição, canonical e Open Graph próprios; também gera sitemap, robots e documento 404. Os documentos gerados carregam a aplicação React; não são prerenderização do conteúdo do corpo. Não remova essa etapa ao publicar os arquivos estáticos, pois ela permite abrir e recarregar cada rota diretamente.
+
+### Referências e pendências editoriais
+
+O usuário solicitou o uso de `estruturart.com.br` e `estruturartcapital.com.br` como referências. O proxy de rede retornou HTTP 403 para ambos, inclusive os domínios com www. A liberação foi salva no rascunho do ambiente, mas o acesso ainda não estava efetivo durante a implementação inicial das páginas.
+
+Até a consulta dos sites ser possível, os conteúdos das soluções partem do PDF e dos materiais já aprovados no chat. O inventário de páginas das referências ainda não foi confirmado. Não foram inventados prêmios, notícias, números de clientes, nomes de instituições parceiras, taxas ou prazos. Premiações e mídia possuem páginas prontas visualmente, com estado editorial “em atualização”. Contatos, URLs de plataformas e site dedicado da Golden seguem como placeholders conforme orientação anterior do usuário. As páginas legais descrevem a versão demonstrativa; não substituem documentos oficiais.

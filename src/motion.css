@@ -1,0 +1,74 @@
+/* All movement uses compositor properties; the original layout stays intact. */
+:root{--motion-ease:cubic-bezier(.16,1,.3,1)}
+@media(prefers-reduced-motion:no-preference){
+  html[data-motion="on"] [data-reveal="pending"]{opacity:0;filter:blur(10px)}
+  .cta,.platform{position:relative;isolation:isolate;transition:background .3s,box-shadow .4s,transform .5s var(--motion-ease)}
+  .cta::before,.platform::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:linear-gradient(115deg,transparent 10%,#ffffff38 40%,transparent 65%);background-size:250% 100%;background-position:170% 0;transition:opacity .3s;z-index:-1}
+  .cta:hover::before,.platform:hover::before{opacity:1;animation:button-sheen .9s var(--motion-ease) both}
+  .cta:hover{box-shadow:0 8px 24px #ff3c0026}
+  .cta:active,.platform:active{transform:translateY(0) scale(.97)}
+  .arrow{transition:transform .5s var(--motion-ease),background .3s}
+  .cta:hover .arrow,.platform:hover .arrow{transform:rotate(-35deg)}
+  .navigation a{position:relative}
+  .navigation a::after{content:'';position:absolute;left:0;right:0;bottom:-5px;height:2px;transform:scaleX(0);transform-origin:right;background:var(--orange);transition:transform .45s var(--motion-ease)}
+  .navigation a:hover::after,.navigation a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+  .hero-art img{transform:perspective(1100px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition:transform .8s var(--motion-ease);transform-origin:50% 55%}
+  .hero-art[data-in-view="true"][data-reveal="complete"] img{animation:art-drift 7s ease-in-out infinite}
+  .app-art[data-in-view="true"][data-reveal="complete"] .phones{animation:art-drift 7s ease-in-out infinite}
+  .app-art[data-in-view="true"][data-reveal="complete"] .coin{animation:coin-drift 8s ease-in-out infinite}
+  .app-art[data-in-view="true"][data-reveal="complete"] .tag-info{animation:tag-drift 5s ease-in-out infinite}
+  .app-art[data-in-view="true"][data-reveal="complete"] .tag-tap{animation:tag-drift 6s ease-in-out -2s infinite}
+  .product-image,.benefits-image{transition:box-shadow .6s var(--motion-ease),filter .6s var(--motion-ease)}
+  .product-image:hover,.benefits-image:hover{box-shadow:0 22px 50px #00000019;filter:saturate(1.12)}
+  .golden{position:relative;isolation:isolate;overflow:clip}
+  .golden::before{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;opacity:0;pointer-events:none;background:radial-gradient(650px circle at var(--light-x,50%) var(--light-y,30%),#c9903429,transparent 70%);transition:opacity .6s}
+  .golden[data-pointer="on"]::before{opacity:1}
+  .golden[data-in-view="true"]>img{animation:golden-breathe 8s ease-in-out infinite}
+  .service-card{position:relative;isolation:isolate;transform-style:preserve-3d;transform:perspective(1100px) rotateX(0deg) rotateY(0deg);transition:transform .6s var(--motion-ease),translate .6s var(--motion-ease),box-shadow .6s var(--motion-ease)}
+  .service-card::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;background:radial-gradient(430px circle at var(--light-x,50%) var(--light-y,50%),#ff6a282c,transparent 72%);opacity:0;transition:opacity .45s}
+  .service-card::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;padding:1px;background:radial-gradient(290px circle at var(--light-x,50%) var(--light-y,50%),#ff7d48d9,transparent 75%);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;opacity:0;transition:opacity .4s}
+  .service-card[data-pointer="on"]::before,.service-card[data-pointer="on"]::after{opacity:1}
+  .service-card[data-reveal="running"] h3{animation:card-copy-in .85s .12s var(--motion-ease) both}
+  .service-card[data-reveal="running"] p{animation:card-copy-in .85s .21s var(--motion-ease) both}
+  .service-card[data-reveal="running"] .cta{animation:card-copy-in .85s .3s var(--motion-ease) both}
+  .service-card[data-reveal="running"]::after{animation:edge-arrival 1.25s .1s var(--motion-ease) both}
+  .service-card .cta:hover{box-shadow:0 5px 30px #ffffff26}
+  .slider-controls button{position:relative;transition:transform .4s var(--motion-ease),filter .4s}
+  .slider-controls button:hover{transform:scaleY(1.5);filter:saturate(1.5)}
+  .slider-controls button.active::after{content:'';position:absolute;inset:6px 0;background:linear-gradient(90deg,transparent,#ffffffa0,transparent);transform-origin:left;animation:slider-sweep .8s var(--motion-ease);pointer-events:none}
+  .benefit-number{transition:transform .6s var(--motion-ease),box-shadow .4s}
+  .benefits-list article:hover .benefit-number{transform:rotate(-12deg) scale(1.13);box-shadow:0 5px 20px #ff3c0033}
+  .contact input,.contact select{transition:background .3s,box-shadow .4s}
+  .contact input:focus,.contact select:focus{background:#fff;box-shadow:0 4px 22px #ff3c0012}
+  .faq summary{transition:color .25s}
+  .faq summary:hover{color:#ff875f}
+  .faq-toggle{transition:transform .6s var(--motion-ease),background .3s,color .3s}
+  .faq summary:hover .faq-toggle{background:var(--orange);color:#fff}
+  .faq details[open]>p{animation:answer-in .5s var(--motion-ease) both}
+  .modal[open]{animation:modal-in .5s var(--motion-ease) both}
+  .modal[open]::backdrop{animation:backdrop-in .4s both}
+  .form-feedback{animation:answer-in .5s var(--motion-ease) both}
+  .navigation.is-open{animation:answer-in .4s var(--motion-ease) both}
+  .socials button{transition:transform .4s var(--motion-ease),color .3s}
+  .socials button:hover{transform:translateY(-5px);color:var(--orange)}
+}
+@media(prefers-reduced-motion:no-preference) and (hover:hover) and (pointer:fine){
+  .service-card[data-pointer="on"]{transform:perspective(1100px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));translate:0 -7px;box-shadow:0 24px 45px #00000020,0 0 0 1px #ff3c001a}
+}
+@keyframes button-sheen{from{background-position:170% 0}to{background-position:-65% 0}}
+@keyframes art-drift{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@keyframes coin-drift{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -12px;rotate:5deg}}
+@keyframes tag-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes golden-breathe{0%,100%{scale:1;filter:brightness(1)}50%{scale:1.025;filter:brightness(1.12)}}
+@keyframes card-copy-in{from{opacity:0;filter:blur(5px);translate:0 14px}to{opacity:1;filter:blur(0);translate:0 0}}
+@keyframes slider-sweep{from{scale:0 1;opacity:1}to{scale:1 1;opacity:0}}
+@keyframes answer-in{from{opacity:0;filter:blur(4px);translate:0 8px}to{opacity:1;filter:blur(0);translate:0 0}}
+@keyframes modal-in{from{opacity:0;filter:blur(10px);transform:translateY(18px) scale(.96)}to{opacity:1;filter:blur(0);transform:translateY(0) scale(1)}}
+@keyframes backdrop-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){
+  html[data-motion="on"] [data-reveal]{opacity:1;filter:none;transform:none}
+  .hero-art img,.service-card{transform:none!important;translate:none!important;rotate:none!important}
+  .cta:hover,.platform:hover{transform:none;box-shadow:none}
+}
+
+@keyframes edge-arrival{0%{opacity:0}35%{opacity:.65}100%{opacity:0}}
