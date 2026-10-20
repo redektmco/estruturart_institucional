@@ -6,9 +6,9 @@ Implementação em React, TypeScript e Vite baseada no arquivo `DESKTOP.pdf` for
 
 Todas as imagens ficam em WebP em `public/images`.
 
-- `hero.webp`: foto da campanha com o cartão Estruturart Capital, enviada pela agência.
-- `hero-cartao-premium.webp`, `hero-celular.webp` e `hero-cartao.webp`: artes fornecidas em `pictures`, convertidas para WebP para os três slides do hero, respectivamente cartão com iluminação laranja, conta digital no celular e cartão no bolso.
-- As variantes `hero-cartao-premium-mobile.webp`, `hero-celular-mobile.webp` e `hero-cartao-mobile.webp` usam recortes próprios de 960 × 800 px, preservando os produtos inteiros. Até 760 px, o hero seleciona essas imagens com `<picture>` e coloca a foto acima da copy; no desktop, as artes são exibidas inteiras, alinhadas à direita, com o texto à esquerda.
+- `hero.webp`: foto original da campanha, com a modelo de óculos finos, argolas e blazer segurando o cartão Estruturart Capital, restaurada no primeiro banner.
+- `hero-celular.webp` e `hero-cartao.webp`: artes fornecidas em `pictures`, convertidas para WebP para os banners de conta digital no celular e cartão no bolso.
+- As variantes `hero-modelo-mobile.webp`, `hero-celular-mobile.webp` e `hero-cartao-mobile.webp` usam recortes próprios de 960 × 800 px, preservando os produtos inteiros. Até 760 px, o hero seleciona essas imagens com `<picture>` e coloca a foto acima da copy; no desktop, as artes são exibidas inteiras, alinhadas à direita, com o texto à esquerda.
 - `founder.webp`, `app.webp` e `logo.webp`: extraídas do PDF original. `logo-light.webp` é a versão do logo para fundos escuros, gerada a partir de `logo.webp`.
 - `recebiveis`, `capital-de-giro`, `fco-empresarial`, `conta`, `conta-escrow`, `securitizadora`, `operacoes-estruturadas`, `pay`, `app-detail`, `historia` e `golden`: fotos reais (sem IA) do banco Freepik, baixadas pela conta Premium da agência, recortadas em 4:3 e com tratamento de cor leve e uniforme.
 
