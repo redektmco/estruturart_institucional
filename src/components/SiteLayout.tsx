@@ -1,3 +1,4 @@
+import { contact } from '../data/contact'
 import { SocialIcon } from './Icons'
 import { image } from '../data/assets'
 import { useLayoutEffect, useState } from 'react'
@@ -22,7 +23,7 @@ export function Footer() {
     <div><h2>Institucional</h2><Link to="/quem-somos">Quem Somos</Link><Link to="/nossa-historia">Nossa História</Link><Link to="/premiacoes">Premiações</Link><Link to="/na-midia">Estruturart na Mídia</Link></div>
     <div><h2>Produtos</h2><Link to="/antecipacao-de-recebiveis">Antecipação de Recebíveis</Link><Link to="/conta-digital-pj">Conta Digital PJ</Link><Link to="/conta-escrow">Conta Escrow</Link><Link to="/securitizadora">Estruturart Securitizadora</Link><Link to="/estruturart-pay">Estruturart Pay</Link><Link to="/golden">Estruturart Golden</Link></div>
     <div><h2>Acesso</h2><Link to="/acesso#conta">Acessar Conta</Link><Link to="/acesso#antecipacao">Plataforma de Antecipação</Link><Link to="/acesso#pay">Plataforma Estruturart Pay</Link><Link to="/contato">Fale com um especialista</Link></div>
-    <div className="footer-contact"><h2>Contato</h2><p>[E-mail comercial — confirmar]</p><p>[Telefone / WhatsApp — confirmar]</p><p>[Endereço completo — confirmar]</p><p>Horário de atendimento: [confirmar]</p></div>
+    <div className="footer-contact"><h2>Contato</h2><a href={`mailto:${contact.email}`}>{contact.email}</a><a href={contact.phoneHref}>{contact.phone}</a><p>{contact.address}</p><p>Horário de atendimento: {contact.hours}</p></div>
   </div><div className="footer-brand"><Link to="/" aria-label="Voltar ao início"><img src={image('logo-light')} alt="Estruturart Capital" width="132" height="44"/></Link><div className="socials" aria-label="Redes sociais">{['X','Instagram','YouTube','LinkedIn','Facebook'].map((s,i)=><Link to={`/contato?canal=${s.toLowerCase()}`} key={s} aria-label={`${s} — canal em breve`}><SocialIcon index={i}/></Link>)}</div></div><div className="footer-bottom"><p>© 2026 Estruturart. Todos os direitos reservados.</p><Link to="/politica-de-privacidade">Política de Privacidade</Link><span aria-hidden="true">|</span><Link to="/termos-de-uso">Termos de Uso</Link></div></div></footer>
 }
 function RouteEffects() {

@@ -95,3 +95,7 @@ O build executa `scripts/generate-pages.mjs` com Node.js 24, gerando um `index.h
 O usuário solicitou o uso de `estruturart.com.br` e `estruturartcapital.com.br` como referências. O proxy de rede retornou HTTP 403 para ambos, inclusive os domínios com www. A liberação foi salva no rascunho do ambiente, mas o acesso ainda não estava efetivo durante a implementação inicial das páginas.
 
 Até a consulta dos sites ser possível, os conteúdos das soluções partem do PDF e dos materiais já aprovados no chat. O inventário de páginas das referências ainda não foi confirmado. Não foram inventados prêmios, notícias, números de clientes, nomes de instituições parceiras, taxas ou prazos. Premiações e mídia possuem páginas prontas visualmente, com estado editorial “em atualização”. Contatos, URLs de plataformas e site dedicado da Golden seguem como placeholders conforme orientação anterior do usuário. As páginas legais descrevem a versão demonstrativa; não substituem documentos oficiais.
+
+## Contatos oficiais
+
+Os dados fornecidos pelo usuário estão centralizados em `src/data/contact.ts` e são compartilhados pelo rodapé e pela página de contato. Email: estruturart@estruturart.com.br. Telefone: (31) 3995-3906. Endereço: Rua Paraíba, 550 - 9° andar - Savassi - Belo Horizonte/MG. Atendimento: segunda a sexta, das 8h às 18h. Email e telefone têm links de ação. O formulário continua demonstrativo; não foi solicitada integração de envio.
