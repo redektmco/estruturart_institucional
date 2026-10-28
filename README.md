@@ -99,3 +99,16 @@ Até a consulta dos sites ser possível, os conteúdos das soluções partem do 
 ## Contatos oficiais
 
 Os dados fornecidos pelo usuário estão centralizados em `src/data/contact.ts` e são compartilhados pelo rodapé e pela página de contato. Email: estruturart@estruturart.com.br. Telefone: (31) 3995-3906. Endereço: Rua Paraíba, 550 - 9° andar - Savassi - Belo Horizonte/MG. Atendimento: segunda a sexta, das 8h às 18h. Email e telefone têm links de ação. O formulário continua demonstrativo; não foi solicitada integração de envio.
+
+## Materiais oficiais recebidos via Dropbox
+
+O arquivo original da pasta compartilhada foi baixado integralmente para `/workspace/dropbox-estruturart/originais.zip` (cerca de 220 MB); os arquivos extraídos ficam fora do checkout, em `/workspace/dropbox-estruturart/extraidos`. O ZIP contém versões de logotipos, peças editáveis, fotos de cartão e maquininhas, imagens da Golden e capturas do aplicativo.
+
+O site usa oito versões otimizadas em WebP desses materiais, totalizando aproximadamente 872 KiB, em `public/images`. A origem, os hashes e as dimensões estão registrados em `docs/brand-media.json`. Não são enviados ao site os arquivos editáveis, ZIPs aninhados, metadados do macOS e duplicatas de exportação.
+
+- **Conta Digital PJ:** foto do cartão Estruturart Capital na home e na página da solução, com recorte que preserva o cartão inteiro.
+- **Estruturart Pay:** foto dos equipamentos na home, visual oficial do terminal no topo da página e galeria com as fotos do presskit.
+- **Aplicativo:** capturas oficiais de acesso e da conta dentro de molduras responsivas na home e nas páginas de Conta Digital PJ e Pay. Valores e identificadores da conta já estão ocultados nas imagens originais; essa ocultação foi preservada. A captura do painel desktop não foi publicada.
+- **Golden:** imagens com a identidade Estruturart Golden na home, no destaque da página e em uma galeria de detalhes.
+
+Os banners do hero, as imagens das outras soluções e o layout aprovado foram preservados. Os originais permanecem disponíveis na máquina; apenas os arquivos otimizados e o manifesto de origem entram no repositório.

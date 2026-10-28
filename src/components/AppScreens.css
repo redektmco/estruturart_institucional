@@ -1,0 +1,15 @@
+.official-app.app-art{position:relative;height:500px;isolation:isolate}
+.official-app .app-screen{position:absolute;bottom:7%;aspect-ratio:591/1280;height:83%;overflow:hidden;border:7px solid #181818;border-radius:29px;background:#181818;box-shadow:0 22px 38px #00000024,0 0 0 1px #ffffff40 inset}
+.official-app .app-screen-back{left:19%;height:77%;bottom:11%;transform:rotate(-9deg);z-index:0}
+.official-app .app-screen-front{left:44%;transform:rotate(7deg);z-index:1}
+.official-app .app-screen img{display:block;width:100%;height:100%;border-radius:20px;object-fit:contain}
+.official-app.official-app--compact{width:100%;align-self:stretch;height:auto;aspect-ratio:4/3;overflow:hidden;border-radius:20px;background:#ececec}
+.official-app--compact .app-screen{height:86%;bottom:0;border-width:5px;border-radius:23px;box-shadow:0 14px 25px #00000020}
+.official-app--compact .app-screen-back{height:78%;left:22%;bottom:5%}
+.official-app--compact .app-screen-front{left:47%}
+.bridge-image .official-app{height:380px;aspect-ratio:auto}
+@media(max-width:900px){.official-app.app-art:not(.official-app--compact){height:420px}.official-app .app-screen-back{left:12%}.official-app .app-screen-front{left:43%}.official-app--compact .app-screen-back{left:21%}.official-app--compact .app-screen-front{left:47%}}
+@media(max-width:1100px){.bridge-image .official-app{height:340px}}
+@media(max-width:800px){.bridge-image .official-app{height:300px}}
+@media(max-width:600px){.official-app.app-art:not(.official-app--compact){height:400px}.official-app .app-screen-back{left:11%}.official-app .app-screen-front{left:43%}.official-app--compact .app-screen{border-width:4px;border-radius:18px}.official-app--compact .app-screen img{border-radius:13px}.official-app--compact .app-screen-back{left:21%}.official-app--compact .app-screen-front{left:47%}.bridge-image .official-app{height:220px}}
+@media(prefers-reduced-motion:no-preference){.official-app[data-in-view="true"][data-reveal="complete"] .app-screen{animation:art-drift 7s ease-in-out infinite}.official-app[data-in-view="true"][data-reveal="complete"] .app-screen-back{animation-delay:-2s}}

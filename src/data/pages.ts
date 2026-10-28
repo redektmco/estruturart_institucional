@@ -13,7 +13,7 @@ export const solutions: Solution[] = [
     faqs:[['Quais recebíveis podem ser antecipados?','Recebíveis de vendas no cartão e duplicatas podem ser avaliados. A elegibilidade depende da análise da carteira.'],['Preciso antecipar todas as minhas vendas?','A composição da operação depende do perfil da carteira e das condições apresentadas. Consulte as possibilidades com um especialista.'],['Qual é o custo da antecipação?','Os custos variam conforme o prazo e as características dos recebíveis. As condições são informadas antes da contratação.']],related:['capital-de-giro','conta-digital-pj'],
   },
   {
-    slug:'conta-digital-pj',name:'Conta Digital PJ',category:'Conta e gestão',headline:'Toda a sua operação.\nUma única conta.',image:'conta',alt:'Empresária gerenciando sua conta pelo celular',
+    slug:'conta-digital-pj',name:'Conta Digital PJ',category:'Conta e gestão',headline:'Toda a sua operação.\nUma única conta.',image:'conta-cartao',alt:'Cartão oficial Estruturart Capital com chip, aproximação e bandeira Mastercard',
     description:'Pix, transferências, pagamentos e extratos em uma plataforma para o dia a dia financeiro da sua empresa.',
     introTitle:'Menos caminhos.\nMais controle.',intro:'Centralizar a movimentação ajuda a acompanhar o que entra, o que sai e o que vem pela frente. A conta digital PJ reúne os recursos essenciais para operar com mais organização.',
     benefits:[['Movimente o negócio','Pix, transferências e pagamentos para acompanhar o ritmo da empresa.'],['Enxergue cada movimento','Extratos e informações para manter a rotina financeira sob controle.'],['Conecte suas soluções','Uma estrutura que aproxima a conta, os recebíveis e os meios de pagamento.']],
@@ -37,7 +37,7 @@ export const solutions: Solution[] = [
     faqs:[['Toda carteira pode ser securitizada?','A viabilidade depende da análise dos recebíveis, da documentação e das características da operação.'],['Quais documentos são necessários?','Os requisitos são definidos durante a análise. A equipe informa a documentação adequada ao caso.'],['Securitização é a mesma coisa que antecipação?','São estruturas diferentes. A solução adequada depende da finalidade, da carteira e das condições da operação.']],related:['operacoes-estruturadas','antecipacao-de-recebiveis'],
   },
   {
-    slug:'estruturart-pay',name:'Estruturart Pay',category:'Meios de pagamento',headline:'Cada venda conta.\nCada detalhe também.',image:'pay',alt:'Cliente pagando com cartão na maquininha de um café',
+    slug:'estruturart-pay',name:'Estruturart Pay',category:'Meios de pagamento',headline:'Cada venda conta.\nCada detalhe também.',image:'pay-terminal',alt:'Maquininha oficial Estruturart Pay com identidade laranja e teclado de pagamentos',
     description:'Máquinas próprias, condições ajustadas ao volume do negócio e informações de vendas em tempo real no aplicativo.',
     introTitle:'Da venda ao caixa.\nTudo mais próximo.',intro:'Seu negócio precisa vender, acompanhar os resultados e planejar os próximos passos. A Estruturart Pay conecta os meios de pagamento à estrutura financeira do grupo.',
     benefits:[['Venda com praticidade','Uma solução de pagamento para o atendimento do seu negócio.'],['Acompanhe em tempo real','Informações de vendas e movimentações pelo aplicativo.'],['Antecipe quando fizer sentido','Avalie a antecipação de vendas parceladas dentro da estrutura do grupo.']],

@@ -1,0 +1,70 @@
+{
+  "source": "Arquivos oficiais fornecidos pelo cliente via Dropbox",
+  "archiveSha256": "9dd0cae9562181e80ac86e7c20c4627b8d572d60e49a730332cf177c8bb714b3",
+  "images": [
+    {
+      "file": "conta-cartao.webp",
+      "source": "Cartão Estruturart - Imagem.jpeg",
+      "sourceSha256": "60440bab4e5a337dff6328e9b8e2c3ac57c98e1f7ac56f8a6c1a73bbf3ea69b4",
+      "width": 960,
+      "height": 720,
+      "bytes": 46136
+    },
+    {
+      "file": "pay-equipamentos.webp",
+      "source": "Logo - Estruturart Pay - 2026 ATUAIS/Presskit/MAQUINAS POS.jpeg",
+      "sourceSha256": "d3013ef8b854bdefe2179c816a388d3095ff0a01466abd66d6e7a8d11bf8045c",
+      "width": 1024,
+      "height": 776,
+      "bytes": 151714
+    },
+    {
+      "file": "pay-terminal-real.webp",
+      "source": "Logo - Estruturart Pay - 2026 ATUAIS/Presskit/MAQUINA POS 01.jpeg",
+      "sourceSha256": "ad108d3249bd1d2dd4c17913598e78ca090c6abf593c239f5fbb92efb3fe2ee1",
+      "width": 768,
+      "height": 1024,
+      "bytes": 78148
+    },
+    {
+      "file": "golden-oficial.webp",
+      "source": "Estruturart Golden Moeda/WhatsApp Image 2025-10-11 at 12.00.18.jpeg",
+      "sourceSha256": "3e870d5ea58bca7559d5e42438643a11a73c56040b8454d4089a54d42ed9c9db",
+      "width": 1280,
+      "height": 1280,
+      "bytes": 217234
+    },
+    {
+      "file": "golden-detalhe.webp",
+      "source": "Estruturart Golden Moeda/WhatsApp Image 2025-10-13 at 17.41.11.jpeg",
+      "sourceSha256": "8685e1dd1eeca63bdb2e08344a07e95e2e64ad280177f0c55e60c554abb1d777",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 215814
+    },
+    {
+      "file": "app-acesso.webp",
+      "source": "Banco Digital - Aplicativo e Cartão/Aplicativo Banco Digital - Imagem 01.jpeg",
+      "sourceSha256": "88a61aef233d297a4b912a7da680fd779601c36bde60ee9876060aaf45df5a51",
+      "width": 591,
+      "height": 1280,
+      "bytes": 25712
+    },
+    {
+      "file": "app-conta.webp",
+      "source": "Banco Digital - Aplicativo e Cartão/Aplicativo Banco Digital - Imagem 02.jpeg",
+      "sourceSha256": "a699b20f2063bb38a64390ed17d5f6849fddf8b4d9d05794892c2c469f527772",
+      "width": 591,
+      "height": 1280,
+      "bytes": 42322
+    },
+    {
+      "file": "pay-terminal.webp",
+      "source": "Logo - Estruturart Pay - 2026 ATUAIS/Presskit/Peças/Layout 02 - Maquinas - ATUAL/T2 mock - 2.png",
+      "sourceSha256": "533baca49661508e9416e0eab36465f7e74ea4211551be9bfb4f76464ac83385",
+      "width": 1400,
+      "height": 1400,
+      "bytes": 115752
+    }
+  ]
+}

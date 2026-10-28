@@ -13,6 +13,7 @@ const revealSelector = [
   '.manifesto > *', '.editorial-links > a', '.history-feature',
   '.timeline article', '.publication-panel > *', '.golden-coin',
   '.golden-destination > *', '.contact-info > *', '.access-help > *',
+  '.brand-gallery figure',
   '.legal-layout aside', '.legal-sections > section', '.legal-related',
 ].join(', ')
 
