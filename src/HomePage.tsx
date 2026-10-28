@@ -9,9 +9,9 @@ import './motion.css'
 const image = (name: string) => `/images/${name}.webp`
 const products = [
   { id: 'antecipacao', name: 'Antecipação de Recebíveis', description: 'O valor das vendas no cartão ou em duplicatas, disponível antes do vencimento. Capital de giro sem contratar dívida.', image: 'recebiveis', alt: 'Empresário revisando relatórios de vendas ao lado do notebook' },
-  { id: 'conta', name: 'Conta Digital PJ', description: 'Pix, transferências, pagamentos e extratos em uma única plataforma. Inclui conta escrow para operações que exigem proteção adicional.', image: 'conta-cartao', alt: 'Foto do cartão branco Estruturart Capital com chip, aproximação e bandeira Mastercard' },
+  { id: 'conta', name: 'Conta Digital PJ', description: 'Pix, transferências, pagamentos e extratos em uma única plataforma. Inclui conta escrow para operações que exigem proteção adicional.', image: 'conta-cartao-studio', alt: 'Cartão branco Estruturart Capital com chip, aproximação e bandeira Mastercard' },
   { id: 'securitizadora', name: 'Estruturart Securitizadora', description: 'Operações estruturadas que convertem carteiras de recebíveis em novas fontes de capital, com governança e segurança documental.', image: 'securitizadora', alt: 'Profissionais analisando os documentos de uma operação financeira' },
-  { id: 'pay', name: 'Estruturart Pay', description: 'Máquinas próprias, taxas ajustadas ao volume do negócio e acompanhamento das vendas em tempo real pelo aplicativo.', image: 'pay-equipamentos', alt: 'Maquininhas Estruturart Pay com a identidade oficial da marca' },
+  { id: 'pay', name: 'Estruturart Pay', description: 'Máquinas próprias, taxas ajustadas ao volume do negócio e acompanhamento das vendas em tempo real pelo aplicativo.', image: 'pay-equipamentos-studio', alt: 'Maquininhas Estruturart Pay com a identidade oficial da marca' },
 ]
 const services = [
   { name: 'Capital de giro', text: 'Oferecemos as melhores opções de Capital de Giro para fortalecer o caixa, impulsionar o crescimento e atender às necessidades do seu negócio.' },
@@ -49,7 +49,7 @@ function HomePage() {
       </section>
       <section className="golden wide" id="golden" aria-labelledby="golden-title">
         <div className="golden-copy"><h2 id="golden-title">Estruturart Golden</h2><p>O ativo digital do grupo tem site próprio.</p><CTA href="/golden">Conhecer a Golden</CTA></div>
-        <img className="golden-official" src={image('golden-detalhe')} alt="Moeda oficial Estruturart Golden com o símbolo do grupo em relevo" width="1024" height="1024" loading="lazy" />
+        <img className="golden-official" src={image('golden-detalhe-studio')} alt="Moeda oficial Estruturart Golden com o símbolo do grupo em relevo" width="1254" height="1254" loading="lazy" />
       </section>
       <section className="services wide" id="servicos" aria-labelledby="services-title">
         <div className="section-head"><h2 id="services-title">Nossos serviços</h2><Link className="text-link" to="/servicos">Ver todas as soluções <span aria-hidden="true">→</span></Link></div>

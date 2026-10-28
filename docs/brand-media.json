@@ -66,5 +66,77 @@
       "height": 1400,
       "bytes": 115752
     }
-  ]
+  ],
+  "studioRetouch": {
+    "description": "Tratamento generativo solicitado pelo cliente: acabamento de estúdio, iluminação controlada, limpeza e fundos consistentes. As capturas do aplicativo não foram alteradas.",
+    "encoding": "ImageMagick utilizado somente para codificar as saídas PNG em WebP, sem retoque adicional.",
+    "images": [
+      {
+        "basedOn": "conta-cartao.webp",
+        "file": "conta-cartao-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-73f4ed56-843f-4e0d-81d5-37846c4e2607.png",
+        "generatedSha256": "7abed848647ac7bf65c4deebfe21649e91a45602afdbd69ac10eb69ae753f17e",
+        "sha256": "b9ac4f2ee8ea2df94a1e1d680a9c9a4286b4f76bde5c633e1158f40974508a88",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 53782
+      },
+      {
+        "basedOn": "pay-equipamentos.webp",
+        "file": "pay-equipamentos-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-96508f08-4988-4772-8531-be869e46f24f.png",
+        "generatedSha256": "49a095bdb4ed6daa6f5880176493d0b6c7da5757ef01e368143263bfabfd1a26",
+        "sha256": "2f94d319f66e51e01876b5873456910c5baae730463852e954d82d7ee3442c8d",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 143238
+      },
+      {
+        "basedOn": "pay-terminal-real.webp",
+        "file": "pay-terminal-real-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-d87d0892-24f5-445b-ab64-bf0d0b1c6ad6.png",
+        "generatedSha256": "477d3335a65a5ad6bd0b9cb8735939a7fc7f98c7a2b1cc66d194a3c25844bc77",
+        "sha256": "366c8ff227f8d9a19ed7117111227f459d08062df2bf6dd93bf3cb4313152243",
+        "width": 1086,
+        "height": 1448,
+        "bytes": 130042
+      },
+      {
+        "basedOn": "golden-oficial.webp",
+        "file": "golden-oficial-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-840cc7ac-a0ed-498a-b82e-c189a344c9a3.png",
+        "generatedSha256": "28501525d6e38b786953f39f53e23e4441a621d2ade7a26021aec491c6b44f28",
+        "sha256": "2d0eed935e6c1d209d47a4b18ffc77f6f3da4ad2bbee99a051270f1d2c3acb73",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 252376
+      },
+      {
+        "basedOn": "golden-detalhe.webp",
+        "file": "golden-detalhe-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-48fae22b-1428-47bf-9280-6177fd4c9871.png",
+        "generatedSha256": "4ca7389beeb6630918eb5357bf35ca5f84f9aae26fa6fe25a34bb0f31f3eb90e",
+        "sha256": "55a67296174a11aefb9fcd1226736f1e3f170392985a0d9a2674059ee30996be",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 271512
+      },
+      {
+        "basedOn": "pay-terminal.webp",
+        "file": "pay-terminal-studio.webp",
+        "tool": "Image Gen",
+        "generatedPng": "exec-0a1c1d9d-03d3-4c78-836c-5223c3afe843.png",
+        "generatedSha256": "01137c3ea7e64c53c1c1390d2d31565bf295bc3723761265638cc42b3ba17c46",
+        "sha256": "abdda8440e88b04cc5a4c65967bff15a86eb787f2f158e87a84bbff7d74e15b6",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 142518
+      }
+    ]
+  }
 }

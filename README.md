@@ -112,3 +112,9 @@ O site usa oito versões otimizadas em WebP desses materiais, totalizando aproxi
 - **Golden:** imagens com a identidade Estruturart Golden na home, no destaque da página e em uma galeria de detalhes.
 
 Os banners do hero, as imagens das outras soluções e o layout aprovado foram preservados. Os originais permanecem disponíveis na máquina; apenas os arquivos otimizados e o manifesto de origem entram no repositório.
+
+## Tratamento de estúdio com Image Gen
+
+Por solicitação do usuário, seis imagens de produto receberam tratamento generativo com Image Gen: cartão, conjunto de maquininhas, terminal real, terminal laranja e duas vistas da Golden. As versões publicadas usam o sufixo `-studio.webp`, com iluminação de estúdio, fundos mais limpos, reflexos controlados e acabamento de produto. Não se tratam de arquivos fotográficos brutos; são versões de apresentação tratadas por IA a partir dos materiais fornecidos.
+
+Os originais WebP foram mantidos no repositório. As saídas PNG de alta resolução estão em `/workspace/generated_images`; os nomes, hashes e dimensões das versões tratadas estão em `docs/brand-media.json`, no campo `studioRetouch`. O ImageMagick foi usado apenas para a codificação em WebP; o tratamento visual foi feito com Image Gen. As duas capturas do aplicativo, os banners, o layout e as animações foram preservados.
