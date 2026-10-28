@@ -67,7 +67,7 @@ No sandbox, a CLI da Vercel deve usar diretórios graváveis via `XDG_DATA_HOME=
 
 Site: https://estruturart-institucional.vercel.app
 
-Projeto Vercel: `estruturart-institucional`. Publicação realizada via API da Vercel a partir dos arquivos compilados em `dist/`, com status `READY` e acesso público. O projeto não está vinculado a deploy automático pelo GitHub; alterações futuras precisam de uma nova publicação. A configuração local de vínculo fica em `.vercel/project.json` (ignorada pelo Git).
+Projeto Vercel: `estruturart-institucional`, vinculado ao repositório `redektmco/estruturart_institucional`. Os pushes na branch `main` acionam o deploy de produção automaticamente na Vercel. A configuração local de vínculo fica em `.vercel/project.json` (ignorada pelo Git). As publicações iniciais foram feitas via API; para atualizações atuais, use o fluxo automático pelo GitHub.
 
 ## Animações
 
