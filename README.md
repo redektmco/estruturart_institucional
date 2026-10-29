@@ -120,3 +120,7 @@ Por solicitação do usuário, seis imagens de produto receberam tratamento gene
 Os originais WebP foram mantidos no repositório. As saídas PNG de alta resolução estão em `/workspace/generated_images`; os nomes, hashes e dimensões das versões tratadas estão em `docs/brand-media.json`, no campo `studioRetouch`. O ImageMagick foi usado apenas para a codificação em WebP; o tratamento visual foi feito com Image Gen. As duas capturas do aplicativo, os banners, o layout e as animações foram preservados.
 
 A foto individual do terminal recebeu uma edição pontual adicional com Image Gen para remover o nome pessoal da tela. A galeria usa `pay-terminal-real-sem-nome.webp`, com a marca e os demais elementos preservados; a origem da edição está em `postEdits` no manifesto de imagens.
+
+## Revisão das imagens e do nome da moeda
+
+As fotos editoriais de `conta.webp`, `pay.webp` e `app-detail.webp` e a arte original `app.webp` voltaram às posições anteriores à inclusão dos materiais do Dropbox (referência: `788e26b`). A galeria adicional de maquininhas deixou de ser exibida. As imagens atuais da Estruturart Golden e os três banners foram preservados. Menu, chamadas e termos de uso passaram a usar o nome completo **Estruturart Golden**.

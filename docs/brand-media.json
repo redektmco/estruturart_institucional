@@ -152,5 +152,21 @@
       "height": 1448,
       "bytes": 101516
     }
-  ]
+  ],
+  "currentUsage": {
+    "editorialImagesRestoredFrom": "788e26b",
+    "restoredImages": [
+      "conta.webp",
+      "pay.webp",
+      "app.webp",
+      "app-detail.webp",
+      "historia.webp"
+    ],
+    "preservedCoinImages": [
+      "golden-oficial-studio.webp",
+      "golden-detalhe-studio.webp"
+    ],
+    "payGalleryVisible": false,
+    "displayName": "Estruturart Golden"
+  }
 }

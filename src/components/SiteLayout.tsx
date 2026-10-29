@@ -7,7 +7,7 @@ import { Arrow } from './UI'
 import { useSiteMotion } from '../useSiteMotion'
 import { routeMeta } from '../data/pages'
 
-const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Golden'],['/quem-somos','Quem Somos']]
+const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Estruturart Golden'],['/quem-somos','Quem Somos']]
 export function Header() {
   const [menu,setMenu]=useState(false)
   const location=useLocation()
