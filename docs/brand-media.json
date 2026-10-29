@@ -138,5 +138,19 @@
         "bytes": 142518
       }
     ]
-  }
+  },
+  "postEdits": [
+    {
+      "basedOn": "pay-terminal-real-studio.webp",
+      "file": "pay-terminal-real-sem-nome.webp",
+      "tool": "Image Gen",
+      "change": "Remoção do nome pessoal exibido na tela, preservando a marca e o restante da fotografia.",
+      "generatedPng": "exec-4125b459-2fd1-4ffa-b481-18ebd4cac5b3.png",
+      "generatedSha256": "4cabea6658124a17ca5b60f23a8e7bdb15a7973c7a96ded9a11e37098ea68743",
+      "sha256": "20c7e78f4bcf4a544fb9784798a5e4c338e2b31a3d781ae195dea3fee180cd32",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 101516
+    }
+  ]
 }
