@@ -124,3 +124,7 @@ A foto individual do terminal recebeu uma edição pontual adicional com Image G
 ## Revisão das imagens e do nome da moeda
 
 As fotos editoriais de `conta.webp`, `pay.webp` e `app-detail.webp` e a arte original `app.webp` voltaram às posições anteriores à inclusão dos materiais do Dropbox (referência: `788e26b`). A galeria adicional de maquininhas deixou de ser exibida. As imagens atuais da Estruturart Golden e os três banners foram preservados. Menu, chamadas e termos de uso passaram a usar o nome completo **Estruturart Golden**.
+
+## Foto do prédio e verso da Estruturart Golden
+
+A foto original do prédio passou a ocupar o destaque visual de “Quem Somos”, preservando a fachada inteira. O verso da moeda foi acrescentado às duas imagens existentes na galeria da Estruturart Golden. Os dois arquivos fornecidos pelo cliente via ImgBB foram apenas convertidos para WebP, sem tratamento generativo. Fontes, dimensões e hashes estão em `docs/brand-media.json`, em `clientProvidedPhotos`.

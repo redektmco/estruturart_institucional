@@ -168,5 +168,28 @@
     ],
     "payGalleryVisible": false,
     "displayName": "Estruturart Golden"
+  },
+  "clientProvidedPhotos": {
+    "description": "Fotos exatas enviadas pelo cliente, somente convertidas para WebP; sem tratamento generativo ou recorte.",
+    "images": [
+      {
+        "file": "golden-verso.webp",
+        "source": "https://ibb.co/DD0D7v21",
+        "sourceSha256": "3068ca8dc1dc0b40c79d7f9233f0abe0961c6fc0ec77c9f5f4f522c9397c0740",
+        "sha256": "6525276af0852d576373d44cad9b757a4c9126837d1555dac5894451f038ef4d",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 291036
+      },
+      {
+        "file": "sede-estruturart.webp",
+        "source": "https://ibb.co/1GHvZ6J3",
+        "sourceSha256": "64a781b1d48dfa01873acbd87dbbca871a9a9b8e87e0b2abe8e6904e4e0d27ab",
+        "sha256": "f64e5e2705400f2969e72e41a582e342bf699b7a4240487cf84b6873b49cd1e3",
+        "width": 685,
+        "height": 1026,
+        "bytes": 146146
+      }
+    ]
   }
 }
