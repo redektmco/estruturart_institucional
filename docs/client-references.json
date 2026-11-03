@@ -1,0 +1,650 @@
+{
+  "source": "https://www.estruturart.com.br/clientes/",
+  "retrievedAt": "2026-11-03",
+  "clients": [
+    {
+      "name": "Rima",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/8e9f3278c4216fcce63d836eea5e832b.png",
+      "href": "https://www.rima.com.br/",
+      "file": "/images/clientes/01.webp",
+      "sourceSha256": "63c251cef39c9c0b377a15fb8f8588a449a6a4d372b77d48b3e42aeaa469c750"
+    },
+    {
+      "name": "Santa Amália",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/bf085cd078b2a15d600ec9be30d0b971.png",
+      "href": "https://www.santamalialimentos.com.br/",
+      "file": "/images/clientes/02.webp",
+      "sourceSha256": "98fdfc019cbcce33c081189e7490c39d093fb26a2301a308997bb241c752344d"
+    },
+    {
+      "name": "Fassa Bortolo",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/3149784ee9ed845655ce5224df8a3099.png",
+      "href": "https://www.fassabortolo.com/it/",
+      "file": "/images/clientes/03.webp",
+      "sourceSha256": "5556348f96876f11a1fbcbf35f44a165bb72f2db12ca6c6f0d1b1ddf1e9fd4f5"
+    },
+    {
+      "name": "Sila Group",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/3d693128cf822e1639cc2fde6650da33.png",
+      "href": "https://www.grupposila.com/",
+      "file": "/images/clientes/04.webp",
+      "sourceSha256": "f541aa84931782b6c8dee388d5882f9c96fe3009fd9e5af0353695058dd91daf"
+    },
+    {
+      "name": "Almaviva do Brasil",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/459db05d59516bfd5b3cf576af389f33.png",
+      "href": "https://www.almavivadobrasil.com.br/pt-br/",
+      "file": "/images/clientes/05.webp",
+      "sourceSha256": "5be99a1560ecfb324a079b569a8e9659a87ca0a861a912a0eddc1dde761c0a35"
+    },
+    {
+      "name": "Delp",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/17e5b40f26ed0afcef97f760d5b7ba54.png",
+      "href": "https://www.delp.com.br/",
+      "file": "/images/clientes/06.webp",
+      "sourceSha256": "0c82140eba3337b22a0399bc151c0d73a2456fa632c6e2407a9a437733a20899"
+    },
+    {
+      "name": "Lemnos Alumínio",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/874818351a7cef9239ebf9d2e63d3381.png",
+      "href": "http://lemnosaluminio.com.br/",
+      "file": "/images/clientes/07.webp",
+      "sourceSha256": "ff8a34e0b228100c98d14c0b505fa9aaecb93fa54b40f954e029fbc2fbb485be"
+    },
+    {
+      "name": "Newton Paiva",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/466e3f896015ac7453c32fefee1253c6.png",
+      "href": "https://www.newtonpaiva.br/",
+      "file": "/images/clientes/08.webp",
+      "sourceSha256": "5dd9ab66d05890036feb1da4fa40839e1f7db63ffd2347796760aff906153cfe"
+    },
+    {
+      "name": "Pacaluz",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/e6e8211aa6121af3431fbbd4cb0c9ba3.png",
+      "href": "http://www.pacaluz.com.br/",
+      "file": "/images/clientes/09.webp",
+      "sourceSha256": "81e5702fa7b837826dba081ea164f95013be12639a6c14ed0314b9022f3b4429"
+    },
+    {
+      "name": "Maricota Alimentos",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/fae944bb666197bc4a4b071987fda525.png",
+      "href": "https://maricotaalimentos.com.br/",
+      "file": "/images/clientes/10.webp",
+      "sourceSha256": "f5e7d7f946c53d0631db3d10a9ebb697c15a416470062e2ca5e8fd629acffbdd"
+    },
+    {
+      "name": "Transpedrosa",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/f759fac34f6f0033c87edb48e4c9b201.png",
+      "href": "http://transpedrosa.com.br/",
+      "file": "/images/clientes/11.webp",
+      "sourceSha256": "7cf5809027208d433f1780a283986da1ac734e3f3d9bfe09e76ec224f6d73d62"
+    },
+    {
+      "name": "O Boticário",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/625f8e789732005767700ae9c62025c4.png",
+      "href": "",
+      "file": "/images/clientes/12.webp",
+      "sourceSha256": "c25ef1d735c25a8cfe722861241fa8b45f7a218a3208e7c3c91665be45efd01c"
+    },
+    {
+      "name": "Saffran Refratários",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/bac0ca0d9a047566d7ef3b9ff09b80ca.png",
+      "href": "https://www.saffran.com.br/",
+      "file": "/images/clientes/13.webp",
+      "sourceSha256": "1d0947bcecbdfea47c50dfff540569408b0e611f4e6f2013312255e1ce99a53e"
+    },
+    {
+      "name": "Transrefer",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/a0b688b4f74c58401cbed1515475b293.png",
+      "href": "http://transrefer.com.br/",
+      "file": "/images/clientes/14.webp",
+      "sourceSha256": "663857eb0ef5d6584ddb21f863015c36f7740057a870db242b95540a55d5a43f"
+    },
+    {
+      "name": "Pacalub",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/599053aa629fe044d96b28f0ccf80fa4.png",
+      "href": "http://www.pacalub.com.br/",
+      "file": "/images/clientes/15.webp",
+      "sourceSha256": "9647b4eb17a3ced5a700d01e39a64862e29a6531b3b3a034cf770752e0147a77"
+    },
+    {
+      "name": "Colégio Batista Mineiro",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/a2345127ce6936b7caa3e13c66958136.png",
+      "href": "https://colegiobatistamineiro.com.br/",
+      "file": "/images/clientes/16.webp",
+      "sourceSha256": "ff3bb4edbea872b3fe02eae226ebb1c656256747cc28bf7a64d5f0684912ec4f"
+    },
+    {
+      "name": "Grupo Rafarillo",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/91e0e9fa2247a7060ec4a55c871f0ade.png",
+      "href": "https://www.rafarillo.com.br",
+      "file": "/images/clientes/17.webp",
+      "sourceSha256": "330eaf7ad564055f803bc975f5553b1aaed00a3be9280c5aa6988db084a5f8a5"
+    },
+    {
+      "name": "Nexus Vigilância",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/212b2f3902659d9d2b0b0de62392f21d.png",
+      "href": "https://nexusvigilancia.com.br/",
+      "file": "/images/clientes/18.webp",
+      "sourceSha256": "ca437218113070a0d60351fdac252a77ee035e3265884163ae93d63f1f5738b9"
+    },
+    {
+      "name": "Minas Logística",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/dda8e5d26ac0427b93e064fe53380607.png",
+      "href": "https://www.minaslogistica.com/",
+      "file": "/images/clientes/19.webp",
+      "sourceSha256": "3579945bb21e04aa784563f966c83559af51363756911ce675c8e5c72ef5263e"
+    },
+    {
+      "name": "Via Jap",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/a3d687d298c6c65329fbfcbda8eabb55.png",
+      "href": "https://viajap.com.br/",
+      "file": "/images/clientes/20.webp",
+      "sourceSha256": "148f45bde1664a277c5df78b66583dad95c78b813a9292bf9ec659782748ddee"
+    },
+    {
+      "name": "Koprum",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/f00995608f8e820808f6fa91db0db019.png",
+      "href": "https://koprum.com.br/",
+      "file": "/images/clientes/21.webp",
+      "sourceSha256": "0a3ff5a82b255526cf8c4766453d8209dd6f22ddc5aa7bc85f19ff1d710c33eb"
+    },
+    {
+      "name": "Grupo Ferrosider",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/4a2591777d772e7ededbac92fbbd8b69.png",
+      "href": "http://www.grupoferrosider.com.br/",
+      "file": "/images/clientes/22.webp",
+      "sourceSha256": "d3ef6a4dc58a22da9fd2380bea44d7a0ede62f8ebbd1ba06f0f8af023c80f59f"
+    },
+    {
+      "name": "Cervejaria Backer",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d3a52f42f01d44cd200ffa9fba344f12.png",
+      "href": "http://www.cervejariabacker.com.br/",
+      "file": "/images/clientes/23.webp",
+      "sourceSha256": "58b1384a88517930e29c3978fae2c29c4bfd023ab0f308c464a94fe1bff60a95"
+    },
+    {
+      "name": "Rede de Ensino Doctum",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/5a968e65495c8e9a0008d1f38f4442bd.png",
+      "href": "https://vest.doctum.edu.br/",
+      "file": "/images/clientes/24.webp",
+      "sourceSha256": "ebd876303f6150fb8057fd52737695f93648fe7e9e8e3f221d551aee10d63c28"
+    },
+    {
+      "name": "Irmãos Gaeta",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/b50fbdc386a3e067e941013df07a305a.png",
+      "href": "http://www.irmaosgaeta.com.br/",
+      "file": "/images/clientes/25.webp",
+      "sourceSha256": "ced18e0befe697f6299404923d4ca57700941c365c54647c3756a266d3c524d2"
+    },
+    {
+      "name": "Procipa",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/b7340403cd36fadcd7a1df9c1385617b.png",
+      "href": "https://procipa.com.br/",
+      "file": "/images/clientes/26.webp",
+      "sourceSha256": "b6e8e6a026255ab14c236863fd9ac3c9f595865cfdbfb0e5c25d5e250a730b22"
+    },
+    {
+      "name": "Construtora Marins",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/bf92c6fb8dee86c3487f8b702ee9b484.png",
+      "href": "http://www.construtoramarins.com.br/",
+      "file": "/images/clientes/27.webp",
+      "sourceSha256": "b2f97e6e02c9ec27a4c14ba9a51effc965e31be7982d98c60120053248b0beaf"
+    },
+    {
+      "name": "Grand Minas",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/ffbc2461f1ccbc3f2ca785e69d91ea97.png",
+      "href": "http://www.grandminas.com.br/",
+      "file": "/images/clientes/28.webp",
+      "sourceSha256": "d5e978c8ee2ddcd0d7d949d5d07d359a50f4a05d893e3de26b711c856a8f71f2"
+    },
+    {
+      "name": "Tubominas",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/fcaec464563ba0510819efe5264d677f.png",
+      "href": "https://tubominas.com.br/",
+      "file": "/images/clientes/29.webp",
+      "sourceSha256": "e028d95053c1b20c54484063fe8bb37a3c317329af717fd6a9f0716e1069e78c"
+    },
+    {
+      "name": "Amazônia Distribuidora",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/bdff3f8409ee25476fa0a4320b3d01ec.png",
+      "href": "http://www.amazoniadistribuidora.com.br/",
+      "file": "/images/clientes/30.webp",
+      "sourceSha256": "5b1bd159bfbf739dfac6636da8c9b0daee7f2e1b7d0474d7b44ab3c732495dda"
+    },
+    {
+      "name": "Faculdade Batista de Minas Gerais",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/8afecec4fd35dc551a2b316e31b39903.png",
+      "href": "https://fbmg.edu.br/",
+      "file": "/images/clientes/31.webp",
+      "sourceSha256": "72ae1951477c76bffefe6e583f66a670de05d5b19a76f5df9e1a232af80c6491"
+    },
+    {
+      "name": "SST Engenharia",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/ecc1d9df9d9535f911a2b548ea7fe487.png",
+      "href": "https://engenhariasst.com.br",
+      "file": "/images/clientes/32.webp",
+      "sourceSha256": "1a72175a5b56c878c98c2b2834117c7c6921d89693d7362dda078ef7539f0cb9"
+    },
+    {
+      "name": "Frigorífico Serradão",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/0073227d0163e37fb64ac53426a5374b.png",
+      "href": "",
+      "file": "/images/clientes/33.webp",
+      "sourceSha256": "ee89cca58cb7e7328e401a902142ce0f2ceadf7c161243c3f8a944aebded6344"
+    },
+    {
+      "name": "Nascentes Fernandes",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/e0f63072f9a5241ce95ddb052aa9eaae.png",
+      "href": "https://www.nascentesfernandes.com.br/novo/index.html",
+      "file": "/images/clientes/34.webp",
+      "sourceSha256": "8c3e717e9645bbd75eb1025edbc750933c04c5735b115db743864ab841a869a6"
+    },
+    {
+      "name": "Forest Soluções Ambientais",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/7ff79a5841c7e9a33e483e5dbcc0ae1a.png",
+      "href": "http://www.forest.srv.br/",
+      "file": "/images/clientes/35.webp",
+      "sourceSha256": "a704ddcb6b967aeff73117212022fa7e6d0398651d41f727cfcfcd537e045ae3"
+    },
+    {
+      "name": "Embrapan",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/77c7867f4a2c04f1fc18245c189413d0.png",
+      "href": "http://embrapan.com.br/",
+      "file": "/images/clientes/36.webp",
+      "sourceSha256": "c00698ab500bd2103309c722d84f8edd56328118dd8342aedbb97c233fcb09de"
+    },
+    {
+      "name": "Trisul Transportes",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/9bacf720b43c012596c583abaf7a1690.png",
+      "href": "",
+      "file": "/images/clientes/37.webp",
+      "sourceSha256": "a6c4ed19fac6ab87966aff17fccbb68f853faa6b408f77e23d42c053a0b11083"
+    },
+    {
+      "name": "DWG Agronegócios",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d75dad36138992a9288c9711c768af87.png",
+      "href": "http://www.dwgagronegocios.com.br/",
+      "file": "/images/clientes/38.webp",
+      "sourceSha256": "fa09c41f0dc4221de1b73855edd675e190edc33f5643792c9d2cc1dc90d73abb"
+    },
+    {
+      "name": "Grupo Canecão",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/804c697fe6fcea9e820442fcfee57a05.png",
+      "href": "http://www.postocanecao.com.br/",
+      "file": "/images/clientes/39.webp",
+      "sourceSha256": "07ad555257eb74a809068c79bc0cd2b783e19db4051b44f57c6e43881184a397"
+    },
+    {
+      "name": "Rede Pedrosa",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/9d40a34ebfda2ccfca95df24677f1770.png",
+      "href": "",
+      "file": "/images/clientes/40.webp",
+      "sourceSha256": "dfe89d88dea565d60f14fce175b50a72a2fe03375c108cc66e5a21d07f0c2a08"
+    },
+    {
+      "name": "Urbis Logística",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/acff096a081fccc53cecc1d8c2d15f65.png",
+      "href": "https://www.urbislogistica.com.br",
+      "file": "/images/clientes/41.webp",
+      "sourceSha256": "3ae849f036eb48ae96812b920239e4ce83a3fbfb259a887311cbc5de4eff2f51"
+    },
+    {
+      "name": "Rede RFL",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/cd0d53960c297a9e28be6508bf37231f.png",
+      "href": "",
+      "file": "/images/clientes/42.webp",
+      "sourceSha256": "7f10447f471bbb3f98d11a4bb64640102200dd2b0acddca8a531361ba3693c07"
+    },
+    {
+      "name": "Luzitar Mudanças",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/301ae03a4893ce125826aafaca8dfdda.png",
+      "href": "https://luzitarmudancas.com.br/",
+      "file": "/images/clientes/43.webp",
+      "sourceSha256": "dea73c83310cb8ddf5923b9399a25f1e999868cc925345c49385886da037cf32"
+    },
+    {
+      "name": "Emterpel",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d1d2236d5f91052289c48b1841947b95.png",
+      "href": "http://www.emterpel.com.br/",
+      "file": "/images/clientes/44.webp",
+      "sourceSha256": "723017cffa4a20b888b92f6d85885154387ab29a70efdd0efc4281f0a6e5a149"
+    },
+    {
+      "name": "Hidrofontes",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/97e8386df5c930ec29a01fcc865abcfa.png",
+      "href": "http://hidrofontes.com.br/",
+      "file": "/images/clientes/45.webp",
+      "sourceSha256": "4e6af117e91ca371a75cc60361b2eca68843ed30bf7fdd6532f71a8a3a9abb27"
+    },
+    {
+      "name": "Alta Energia Fit",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/71c76f80d07f3c239d59eed2214e14ac.png",
+      "href": "http://altaenergiafit.com.br/",
+      "file": "/images/clientes/46.webp",
+      "sourceSha256": "56c523e92b85ed0509230d40506afeeb09d45316bb2814402ba1db5e4f26aff8"
+    },
+    {
+      "name": "Calibratec",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/cb355906469b2cb924618e0b29a66a1b.png",
+      "href": "https://www.calibratec.net.br/",
+      "file": "/images/clientes/47.webp",
+      "sourceSha256": "9bc3228d3128c1dc93e3801dfdb5d33bd5d5a84d5958fdd7addb19bd7662a7ac"
+    },
+    {
+      "name": "Transmineira",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/db1c48def94da030e7513fc0f0577a42.png",
+      "href": "http://www.transmineira.com.br/",
+      "file": "/images/clientes/48.webp",
+      "sourceSha256": "58e665c2e6c45390609b230200318159ba506f75b5a858f23837083be537c173"
+    },
+    {
+      "name": "Mod Line",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d32a4fdac99d5bdbede50ab38cb80242.png",
+      "href": "",
+      "file": "/images/clientes/49.webp",
+      "sourceSha256": "4a8e03de334920870d64db47bfcf4496d0d1047201589ff377ae70c1a7f5ea2f"
+    },
+    {
+      "name": "Construtora Excelso",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/536ce2e1ca77b4f7cfb9af141cf0ce4c.png",
+      "href": "https://construtoraexcelso.com.br/",
+      "file": "/images/clientes/50.webp",
+      "sourceSha256": "378d0a959cc0008cffd355369b168f266acc253dfbb88d03798fedfe4911fd2f"
+    },
+    {
+      "name": "Arquimedes Automação e Informática",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/0275edd720845220dc2805c086d48ce5.png",
+      "href": "https://arquimedesmg.com.br/",
+      "file": "/images/clientes/51.webp",
+      "sourceSha256": "3cf0f15f9bbe0a3bc670177c95e30764ca69d463eda7fc48740dedfc9d2f25c2"
+    },
+    {
+      "name": "Biosep",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/f9bf1db18b5f6fc6f41668748e63d8c3.png",
+      "href": "",
+      "file": "/images/clientes/52.webp",
+      "sourceSha256": "a1ceb535a906e9ee1f3cc2e9923589fe6ce05be616be72fc0ba651f6858d83f5"
+    },
+    {
+      "name": "Rotibril",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/19daa39b164ee83631cfbfc1dee6e231.png",
+      "href": "https://www.rotibril.com.br/",
+      "file": "/images/clientes/53.webp",
+      "sourceSha256": "d4e07cc30e1cd93401bac57d9565a3c6839ab469a2763e4d5d1a20f21e07e96d"
+    },
+    {
+      "name": "G+G Metalúrgica",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/3b391a8ba0831dd2ace1c52fda552fff.png",
+      "href": "",
+      "file": "/images/clientes/54.webp",
+      "sourceSha256": "6828d275036a547d59fa0e07faabaa2d2b79438e071ecb6a696669cddf74bbb6"
+    },
+    {
+      "name": "Previna Segurança Eletrônica",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/59ced0921ed8ada5a9254bbbe32c090a.png",
+      "href": "",
+      "file": "/images/clientes/55.webp",
+      "sourceSha256": "ebdfb34ba8bb9dc7e61ab740223d82927f592f649f5e51711974c4b5c8917e20"
+    },
+    {
+      "name": "Textinova Fiação",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/8f3dbf3b3163fb94215539d969437ae4.png",
+      "href": "https://www.textilnova.com.br",
+      "file": "/images/clientes/56.webp",
+      "sourceSha256": "cd618574ed1159e320a89a461b1512fae6456f756ffc15c12c7938b9424d59b9"
+    },
+    {
+      "name": "Deflor Bioengenharia",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/4607a7445b4718499dc6604acb9e7105.png",
+      "href": "http://deflor.com.br/",
+      "file": "/images/clientes/57.webp",
+      "sourceSha256": "153f22e5d14c1ec9494052a6e2cd8c9c11f6c766cfc6b2b3d41bdc14e71922f4"
+    },
+    {
+      "name": "Rede Imvista",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/40c3cf89b415c00ffb1cebf00b9205cc.png",
+      "href": "https://www.imvista.com.br/",
+      "file": "/images/clientes/58.webp",
+      "sourceSha256": "62dc4b1d39dd50bd07cd697b2ff197adab10a28e8fe7b3ecc3f417b8d7326443"
+    },
+    {
+      "name": "Polikini",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/b19a7c4cec32fd84b57c8a20b060094a.png",
+      "href": "http://www.polikini.com.br/",
+      "file": "/images/clientes/59.webp",
+      "sourceSha256": "d5c896e4de6e621dfc15e2eff89b573f0cf062438686eb2e077e10c47fb78e5c"
+    },
+    {
+      "name": "BeMar Transportes e Mecânica",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/613c0f98b5da400803e8ed7407762cfc.png",
+      "href": "",
+      "file": "/images/clientes/60.webp",
+      "sourceSha256": "8bc329405119799a4679104166f22da07151016c2365d261487505acab2f4d54"
+    },
+    {
+      "name": "Rações Piteiras",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/ec9b1fbcb37ed6ffa3cf587181092e23.png",
+      "href": "http://www.racoespiteiras.com.br/",
+      "file": "/images/clientes/61.webp",
+      "sourceSha256": "139ab5eb0afd342aa4c6cff7a316691db83775e58ba5a0aa86c96a8f7500bb2c"
+    },
+    {
+      "name": "Imperall",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/0f2e48119a1e0760eed7bcbe39ca835a.png",
+      "href": "https://www.imperal.com.br/",
+      "file": "/images/clientes/62.webp",
+      "sourceSha256": "530934192d71ab66cbebb36484a595381a75208de44264c75b9c6afa6b198a7a"
+    },
+    {
+      "name": "Manifar",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/897948eb2b92162dc7633370074f9053.png",
+      "href": "http://www.manifar.com.br/",
+      "file": "/images/clientes/63.webp",
+      "sourceSha256": "b5ef7f429624c1408167d9ce781d44ffbb8cb8f560c74da60d61897d325752ad"
+    },
+    {
+      "name": "Nipobrasileira",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/f807495fc61ddd03da54dcbfa809b5c5.png",
+      "href": "http://www.nipobrasileira.com.br/",
+      "file": "/images/clientes/64.webp",
+      "sourceSha256": "fd505ffbe457504f4fb0ec30cc3df0307a28bb22204fda344c924cbd13e7b374"
+    },
+    {
+      "name": "Construtora Minas Rio",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/218470d217f24aa2c93605d8e97163da.png",
+      "href": "",
+      "file": "/images/clientes/65.webp",
+      "sourceSha256": "20224f07edb6aa55e7710ffe8a45f62a549c7b5606c5790e07647144dbb12a2a"
+    },
+    {
+      "name": "Locatio",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/9433f29ece96f0368b64bcc7d3103560.png",
+      "href": "",
+      "file": "/images/clientes/66.webp",
+      "sourceSha256": "01c4a51c930779de08e218df8b4e3bb844c7439f7d7e88841e46e7f06ff64eba"
+    },
+    {
+      "name": "Vitória Tintas",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/6ee94f7da65c1ad1c33f1f90ec1426ff.png",
+      "href": "http://vitoriatintas.com.br/",
+      "file": "/images/clientes/67.webp",
+      "sourceSha256": "faf8175298cf351299734298da5a8f8020df1623f4733fdd294351fe3af79c28"
+    },
+    {
+      "name": "Magnum",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/c17c89758e594f5ba9f5ae8b685f5360.png",
+      "href": "",
+      "file": "/images/clientes/68.webp",
+      "sourceSha256": "c3429ec41eebfbcbc6d839acc819262f31d45628dc2f83b98f321eae0aabfc48"
+    },
+    {
+      "name": "Ecolife Soluções Ambientais",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/c9deadbf992c38cc22b683ce935e5d9a.png",
+      "href": "http://www.ecolife.com.br/",
+      "file": "/images/clientes/69.webp",
+      "sourceSha256": "0f7dc0e7727b4036c17fad36e9c487cf7f6c34dc616f78cbec4009e6b8f85ffa"
+    },
+    {
+      "name": "Maxmed",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/6af862a8c0f3d94a4a919830c7a4c8ff.png",
+      "href": "http://www.maxmedbh.com.br/",
+      "file": "/images/clientes/70.webp",
+      "sourceSha256": "ce7683e5376c5909196f15e94002155fee22dad406a07081481fda00782b5e2b"
+    },
+    {
+      "name": "Maioridade",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/f654a51c062e4dec3e83908cffe7bd49.png",
+      "href": "https://maioridade.com/",
+      "file": "/images/clientes/71.webp",
+      "sourceSha256": "27c0f91d967ff34317b927f3d35551039d0771679854760aea91841839b3b987"
+    },
+    {
+      "name": "MM Metalúrgica",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/892fd7464f3c56166f29ba8f17a0ca47.png",
+      "href": "",
+      "file": "/images/clientes/72.webp",
+      "sourceSha256": "3861f502262a2731a273bfc2b7f9ca1f6ea3401654b64a4c722167b8412eb179"
+    },
+    {
+      "name": "Seestel",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/fd2bf1018bf60b0b16201709885d5f67.png",
+      "href": "http://seestel.com.br/",
+      "file": "/images/clientes/73.webp",
+      "sourceSha256": "2975a24e96ee0ab5aa888c53b933483f9ea1f33680d7c92eeaf5a44180782969"
+    },
+    {
+      "name": "Bauxita",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/70cf2f5d70ec9a04c76f16b1a3ef3e0a.png",
+      "href": "",
+      "file": "/images/clientes/74.webp",
+      "sourceSha256": "0dc92c817d4761d71e1f9572d07be032d0569959080e87bc329c04af3904b4f5"
+    },
+    {
+      "name": "LD Engineering",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/101eef5a7ce28ae964f18e0a1c16ae0e.png",
+      "href": "",
+      "file": "/images/clientes/75.webp",
+      "sourceSha256": "175e97d85000021f13ab0229b2fd6016de0d88e79e2be122e3b3fc3bfecde977"
+    },
+    {
+      "name": "Protominas",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/00720875e17ca6edb36c11a792c0ae17.png",
+      "href": "",
+      "file": "/images/clientes/76.webp",
+      "sourceSha256": "8fa859a6249c7fb75a8c2fbc61f42ecad53607b3d0d3eb2973f96517424db8af"
+    },
+    {
+      "name": "Engecaf",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/716b22d062c4834ee296324e4e75f87a.png",
+      "href": "",
+      "file": "/images/clientes/77.webp",
+      "sourceSha256": "93c48bf345986a4ede8abcaf824313918281243a28a0769d72d63519b5861370"
+    },
+    {
+      "name": "Super Brisa",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/e08259334d14de4d9430cd8f859c9cdd.png",
+      "href": "https://www.engecaf.com.br/",
+      "file": "/images/clientes/78.webp",
+      "sourceSha256": "bed21b6f9b8c1e0ed3d32c377232f0364a53e29ea231e1f183a03eb40afdb3bc"
+    },
+    {
+      "name": "SBTec",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/96b8858a2893c6ac8e82402c25ec49ca.png",
+      "href": "",
+      "file": "/images/clientes/79.webp",
+      "sourceSha256": "716187df8a1e1136c88ac3ea2820223ef79456d5c86092408f2cf1cd0f86f6bd"
+    },
+    {
+      "name": "SP Transportes",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/7efce840b0f75bf92c30d41f8047d602.png",
+      "href": "",
+      "file": "/images/clientes/80.webp",
+      "sourceSha256": "0c3b3217b949de210eff849a59cf383666f094468d4e90f5e752a7e2fc752601"
+    },
+    {
+      "name": "GP Tecbet",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/994c4b4e31349a271ba4b3ad8e7ad1f4.png",
+      "href": "",
+      "file": "/images/clientes/81.webp",
+      "sourceSha256": "9ee8b76b7205872a90ff68f8b15f50ae004de1345db532ed37354b7bac23e30a"
+    },
+    {
+      "name": "Assis Construções",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/cb0d494ff44a03607cac6d39f4b3b1a6.png",
+      "href": "",
+      "file": "/images/clientes/82.webp",
+      "sourceSha256": "2d78b85989caa45b440dc45fb1970700791b00334ab4adf64b0eb5f07b4ac697"
+    },
+    {
+      "name": "Elite Serviços",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d993cf61a7e6d031777909a699458052.png",
+      "href": "",
+      "file": "/images/clientes/83.webp",
+      "sourceSha256": "69ea7c00bb8a8bd7a87b8507be3185a3641b9db2d8a4f1bf05a38c561a9a366f"
+    },
+    {
+      "name": "Copyline",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/2a355686036f2a4f4bd75c6eb15c5dcf.png",
+      "href": "",
+      "file": "/images/clientes/84.webp",
+      "sourceSha256": "b55d2a566db6b00fa9127712013a1fd0d2982ab19fb8a57c36c4f316a5a2ea09"
+    },
+    {
+      "name": "MTX Construções e Empreendimentos",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/7152eed8b50a83268f4a77aeacf45cd8.png",
+      "href": "",
+      "file": "/images/clientes/85.webp",
+      "sourceSha256": "f0cab7867d80bf87987d64fb6a8db0e6d0fbece72c8db27359941b3900a98821"
+    },
+    {
+      "name": "EIF",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/056f52a7c2faa9cc1cf8a4663a071609.png",
+      "href": "",
+      "file": "/images/clientes/86.webp",
+      "sourceSha256": "36794f8a9650f7ac2d42351e1eb0fd13b6d0a1d7d0c7e3bd394c978235e585d9"
+    },
+    {
+      "name": "N",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/d2a426786c8ab1d9cf57cd620efbc92f.png",
+      "href": "",
+      "file": "/images/clientes/87.webp",
+      "sourceSha256": "2b4b24dfec60a3d34378e49c80ea7207047ef7ee1658351ae82ce323f195b2f1"
+    },
+    {
+      "name": "RAL Engenharia",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/02d4575180018e28a0d77597c36e9b07.png",
+      "href": "",
+      "file": "/images/clientes/88.webp",
+      "sourceSha256": "f807f861fea7d0f85ae2842d12bb741d1da85114e5bb9eea14ba8baa3603993d"
+    },
+    {
+      "name": "Itaporanga",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/515f4e05330da9c506ad00005b14b0d7.png",
+      "href": "",
+      "file": "/images/clientes/89.webp",
+      "sourceSha256": "b27669951c60c458b7e36058066b9a74a287a5c6c53a346110a3495a1cafac16"
+    },
+    {
+      "name": "Produtos Castellani",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/fc11cf7c7526bdd44fceb4adec925dba.png",
+      "href": "",
+      "file": "/images/clientes/90.webp",
+      "sourceSha256": "1f727148f15ca1a20245634be47293cf993e78c864703b37f83f6f7678b5bee8"
+    },
+    {
+      "name": "Stampe Estamparia Digital",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/81e7443c3ee09dac578031f2b2e7392a.png",
+      "href": "",
+      "file": "/images/clientes/91.webp",
+      "sourceSha256": "8be2484144e501ce076f2ba5160f2c02527b73fbad1c62eea6e8acbc4fe4d627"
+    },
+    {
+      "name": "Logus Logística",
+      "source": "https://www.estruturart.com.br/imgpagsfixas/5e87213770f1790940d2151977f5fbf5.png",
+      "href": "https://loguslogistica.com.br/",
+      "file": "/images/clientes/92.webp",
+      "sourceSha256": "1abdc387c273f1d9caaf2673d8522fabac3a644ea73d1ef0d7c49c6784bd30bf"
+    }
+  ]
+}

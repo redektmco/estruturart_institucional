@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ContactSection } from './components/ContactSection'
 import { HeroCarousel } from './components/HeroCarousel'
+import { CardPhoto } from './components/CardPhoto'
 import { homeProductRoutes, homeServiceRoutes } from './data/pages'
 import './App.css'
 import './motion.css'
@@ -14,9 +15,8 @@ const products = [
 ]
 const services = [
   { name: 'Capital de giro', text: 'Oferecemos as melhores opções de Capital de Giro para fortalecer o caixa, impulsionar o crescimento e atender às necessidades do seu negócio.' },
-  { name: 'FCO Empresarial', text: 'Com taxas reduzidas, prazos estendidos e condições diferenciadas, o programa atende os setores de indústria, infraestrutura, turismo, comércio e serviços.' },
   { name: 'Conta Escrow', text: 'Proteção adicional para operações que precisam de uma conta com condições específicas para a movimentação e liberação dos recursos.' },
-  { name: 'Operações estruturadas', text: 'Soluções que conectam a carteira de recebíveis da sua empresa a novas fontes de capital, com governança e segurança documental.' },
+  { name: 'Operações estruturadas', text: 'Financiamentos no Brasil e no exterior para capital de giro, investimentos em bens de capital e alongamento do perfil da dívida.' },
 ]
 const faqs = [
   ['Como falo com um especialista?', 'Preencha o formulário de contato com as informações da sua empresa e o produto de interesse. Nesta versão demonstrativa, o envio ainda não está disponível.'],
@@ -42,7 +42,7 @@ function HomePage() {
         <div className="products">
           {products.map(p => <article className="product" id={p.id} key={p.id} aria-labelledby={`${p.id}-title`}>
             <div className="product-copy"><h3 id={`${p.id}-title`}>{p.name}</h3><p>{p.description}</p><CTA href={`/${homeProductRoutes[p.id]}`}>Ver mais</CTA></div>
-            <img className="product-image" src={image(p.image)} alt={p.alt} width="1280" height="960" loading="lazy" />
+            {p.id==='conta'?<CardPhoto className="product-image"/>:<img className="product-image" src={image(p.image)} alt={p.alt} width="1280" height="960" loading="lazy" />}
           </article>)}
         </div>
       </section>

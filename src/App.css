@@ -68,7 +68,7 @@
 
 /* Services */
 .services{padding-top:clamp(56px,7vw,88px)}
-.service-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.service-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .service-card{display:flex;flex-direction:column;align-items:flex-start;min-height:250px;padding:26px 22px 22px;border-radius:20px;background:#000;color:#fff}
 .service-card h3{font-size:19px;font-weight:500;line-height:1.25;margin-bottom:10px}
 .service-card p{font-size:14.5px;line-height:1.5;color:#bdbdbd;margin-bottom:20px}

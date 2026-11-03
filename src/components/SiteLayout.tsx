@@ -7,7 +7,7 @@ import { Arrow } from './UI'
 import { useSiteMotion } from '../useSiteMotion'
 import { routeMeta } from '../data/pages'
 
-const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Estruturart Golden'],['/quem-somos','Quem Somos']]
+const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Estruturart Golden'],['/quem-somos','Quem Somos'],['/clientes','Clientes']]
 export function Header() {
   const [menu,setMenu]=useState(false)
   const location=useLocation()
@@ -20,7 +20,7 @@ export function Header() {
 }
 export function Footer() {
   return <footer className="footer dark"><div className="wide"><div className="footer-columns">
-    <div><h2>Institucional</h2><Link to="/quem-somos">Quem Somos</Link><Link to="/nossa-historia">Nossa História</Link><Link to="/premiacoes">Premiações</Link><Link to="/na-midia">Estruturart na Mídia</Link></div>
+    <div><h2>Institucional</h2><Link to="/quem-somos">Quem Somos</Link><Link to="/clientes">Clientes</Link><Link to="/nossa-historia">Nossa História</Link><Link to="/premiacoes">Premiações</Link><Link to="/na-midia">Estruturart na Mídia</Link></div>
     <div><h2>Produtos</h2><Link to="/antecipacao-de-recebiveis">Antecipação de Recebíveis</Link><Link to="/conta-digital-pj">Conta Digital PJ</Link><Link to="/conta-escrow">Conta Escrow</Link><Link to="/securitizadora">Estruturart Securitizadora</Link><Link to="/estruturart-pay">Estruturart Pay</Link><Link to="/golden">Estruturart Golden</Link></div>
     <div><h2>Acesso</h2><Link to="/acesso#conta">Acessar Conta</Link><Link to="/acesso#antecipacao">Plataforma de Antecipação</Link><Link to="/acesso#pay">Plataforma Estruturart Pay</Link><Link to="/contato">Fale com um especialista</Link></div>
     <div className="footer-contact"><h2>Contato</h2><a href={`mailto:${contact.email}`}>{contact.email}</a><a href={contact.phoneHref}>{contact.phone}</a><p>{contact.address}</p><p>Horário de atendimento: {contact.hours}</p></div>

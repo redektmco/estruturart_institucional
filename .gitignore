@@ -27,3 +27,6 @@ dist-ssr
 .vercel
 .env
 .env.*
+
+# Intermediate task files
+work/

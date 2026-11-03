@@ -128,3 +128,15 @@ As fotos editoriais de `conta.webp`, `pay.webp` e `app-detail.webp` e a arte ori
 ## Foto do prédio e verso da Estruturart Golden
 
 A foto original do prédio passou a ocupar o destaque visual de “Quem Somos”, preservando a fachada inteira. O verso da moeda foi acrescentado às duas imagens existentes na galeria da Estruturart Golden. Os dois arquivos fornecidos pelo cliente via ImgBB foram apenas convertidos para WebP, sem tratamento generativo. Fontes, dimensões e hashes estão em `docs/brand-media.json`, em `clientProvidedPhotos`.
+
+## Feedbacks aplicados — 03/11/2026
+
+- Página `/clientes` com as 92 marcas da página oficial, acessível pelo menu, rodapé e Quem Somos. Logotipos servidos localmente; fontes e hashes em `docs/client-references.json`.
+- Operações estruturadas: apresentação, catálogo, benefícios, etapas e FAQ reescritos com base no texto do cliente sobre financiamento, viabilidade técnico-econômica e captação no Brasil e exterior.
+- FCO Empresarial removido do catálogo, home, formulário, relacionados e sitemap. O endereço antigo redireciona para `/servicos`.
+- Cartão preto aprovado em destaque na Conta Digital PJ e na home. `CardPhoto` exibe a área do produto da campanha existente por um viewport SVG, sem recriar a imagem. Os banners com cartão preto foram preservados.
+- Galeria da Pay exibida com o logotipo oficial no título e a nova máquina touchscreen em laranja e branco, gerada por Image Gen a partir das referências. A imagem é identificada como proposta de personalização.
+- `/acesso` separa clientes atuais (links oficiais, com as duas opções da Pay) de novos clientes (formulário com o produto pré-selecionado). Fontes dos links em `src/data/platforms.ts`.
+- Foto integral do prédio em Quem Somos, frente da Golden no topo e verso na galeria preservados.
+
+Os sites oficiais foram consultados em 03/11/2026. Links externos confirmados a partir dos próprios sites; autenticação e funcionamento interno das contas não foram testados. O formulário existente continua demonstrativo.

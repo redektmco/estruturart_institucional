@@ -166,8 +166,10 @@
       "golden-oficial-studio.webp",
       "golden-detalhe-studio.webp"
     ],
-    "payGalleryVisible": false,
-    "displayName": "Estruturart Golden"
+    "payGalleryVisible": true,
+    "displayName": "Estruturart Golden",
+    "blackCardSource": "hero-cartao.webp — fotografia aprovada exibida pelo componente CardPhoto com viewport SVG, sem geração de novos pixels",
+    "newTerminal": "pay-terminal-touch.webp"
   },
   "clientProvidedPhotos": {
     "description": "Fotos exatas enviadas pelo cliente, somente convertidas para WebP; sem tratamento generativo ou recorte.",
@@ -191,5 +193,19 @@
         "bytes": 146146
       }
     ]
-  }
+  },
+  "feedbackAssets": [
+    {
+      "file": "pay-terminal-touch.webp",
+      "source": "Image Gen, com base nas duas fotografias da nova máquina enviadas pelo cliente; proposta de personalização em laranja e branco.",
+      "sha256": "ac925f2e3725ec9546b664e2289f90517a9cc53230a83904d7b994dfe337431c",
+      "bytes": 66266
+    },
+    {
+      "file": "logo-pay.webp",
+      "source": "https://www.estruturartcapital.com.br/images/logo-pay.png",
+      "sha256": "340a3f74a7bfbde75154347dd6cbc00e6539314ce7d844a772b7d9c2808f13d7",
+      "bytes": 2744
+    }
+  ]
 }

@@ -1,15 +1,25 @@
 import { contact } from '../data/contact'
 import { Link } from 'react-router-dom'
-import { Breadcrumb, ButtonLink, PageLead } from '../components/UI'
+import { Arrow, Breadcrumb, ButtonLink, PageLead } from '../components/UI'
 import { ContactSection } from '../components/ContactSection'
+import { platforms } from '../data/platforms'
+import { DiagonalArrow } from '../components/Icons'
 
 export function ContactPage(){return <main id="principal" className="inner-page contact-page"><div className="wide"><Breadcrumb current="Contato"/></div><section className="editorial-hero content"><PageLead label="Vamos conversar" title={'Uma conversa pode\nmudar o próximo passo.'} description="Conte o que sua empresa precisa. O caminho começa com a compreensão do seu negócio."/></section><ContactSection/><section className="contact-info wide" aria-label="Informações de contato"><div><span className="eyebrow">Contato direto</span><h2>Perto do seu negócio.</h2><p>Fale com nossa equipe por email ou telefone, ou visite nosso endereço em Belo Horizonte.</p></div><dl><div><dt>Email</dt><dd><a href={`mailto:${contact.email}`}>{contact.email}</a></dd></div><div><dt>Telefone</dt><dd><a href={contact.phoneHref}>{contact.phone}</a></dd></div><div><dt>Endereço</dt><dd>{contact.address}</dd></div><div><dt>Horário de atendimento</dt><dd>{contact.hours}</dd></div></dl></section></main>}
 
-export function AccessPage(){return <main id="principal" className="inner-page"><div className="wide"><Breadcrumb current="Acessar plataforma"/></div><section className="editorial-hero content"><PageLead label="Área de acesso" title={'Seu negócio conectado.\nSeu acesso, aqui.'} description="Encontre o ambiente de que você precisa para acompanhar a rotina financeira da sua empresa."/></section><section className="access-grid wide" aria-label="Plataformas Estruturart">{[
- ['conta','Conta Digital PJ','Movimentações, pagamentos e extratos para organizar o dia a dia da empresa.'],
- ['antecipacao','Antecipação de Recebíveis','O ambiente para acompanhar suas operações de antecipação.'],
- ['pay','Estruturart Pay','Informações de vendas e movimentações da sua operação de pagamentos.'],
-].map(([id,title,text],i)=><article id={id} key={id} className="service-card feature-card"><span className="feature-index">0{i+1}<span aria-hidden="true">↗</span></span><h2>{title}</h2><p>{text}</p><span className="access-status">Link oficial em breve</span><ButtonLink to={`/contato?produto=${encodeURIComponent(title)}`} light>Solicitar acesso</ButtonLink></article>)}</section><section className="access-help content"><span className="eyebrow">Precisa de orientação?</span><h2>A gente ajuda<br/>a encontrar o caminho.</h2><p>Para informações sobre abertura de conta, contratação ou acesso, conheça nossos canais de atendimento.</p><ButtonLink to="/contato">Falar com a equipe</ButtonLink></section></main>}
+export function AccessPage(){return <main id="principal" className="inner-page access-page">
+  <div className="wide"><Breadcrumb current="Acessar plataforma"/></div>
+  <section className="editorial-hero content"><PageLead label="Área de acesso" title={'Seu negócio conectado.\nSeu acesso, aqui.'} description="Encontre o ambiente de que você precisa para acompanhar a rotina financeira da sua empresa."/></section>
+  <section className="access-section wide" aria-labelledby="platform-access-title">
+    <div className="section-heading"><span className="eyebrow">Já é cliente?</span><h2 id="platform-access-title">Para acessar as plataformas</h2></div>
+    <div className="access-grid">{platforms.map((platform,i)=><article id={platform.id} key={platform.id} className="service-card feature-card"><span className="feature-index">0{i+1}<DiagonalArrow/></span><h3>{platform.name}</h3><p>{platform.description}</p><div className="access-actions">{platform.links.map(link=><a key={link.href} className="cta cta-light" href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`${link.label} — ${platform.name} (abre em nova aba)`}>{link.label}<Arrow/></a>)}</div></article>)}</div>
+  </section>
+  <section className="access-section access-request wide" aria-labelledby="request-access-title">
+    <div className="section-heading"><span className="eyebrow">O próximo passo começa aqui</span><h2 id="request-access-title">Ainda não é cliente?</h2><p>Escolha a solução e preencha o formulário para conhecer as condições de acesso.</p></div>
+    <div className="access-grid">{platforms.map((platform,i)=><article key={platform.id} className="service-card feature-card"><span className="feature-index">0{i+1}<DiagonalArrow/></span><h3>{platform.name}</h3><p>{platform.description}</p><ButtonLink to={`/contato?produto=${encodeURIComponent(platform.name)}`} light>Solicitar acesso</ButtonLink></article>)}</div>
+  </section>
+  <section className="access-help content"><span className="eyebrow">Precisa de orientação?</span><h2>A gente ajuda<br/>a encontrar o caminho.</h2><p>Se tiver dúvidas sobre qual plataforma utilizar, fale com nossa equipe.</p><ButtonLink to="/contato">Falar com a equipe</ButtonLink></section>
+</main>}
 const privacySections = [
  ['Sobre esta página','Este documento descreve o funcionamento da versão demonstrativa deste site. A política oficial, com a identificação completa do responsável e seu canal de privacidade, será disponibilizada antes da ativação de serviços que tratem dados pessoais.'],
  ['Informações no formulário','Os campos de nome, empresa, email, CNPJ, produto de interesse e faturamento são usados apenas para a validação local do formulário nesta versão. O envio ao atendimento não está ativo.'],
@@ -23,7 +33,7 @@ const termsSections = [
  ['Finalidade do site','Este site apresenta informações institucionais e soluções do grupo Estruturart. A versão atual é demonstrativa e não permite contratar produtos, abrir contas, fazer pagamentos ou realizar operações financeiras.'],
  ['Informações sobre as soluções','Os textos têm finalidade informativa. Disponibilidade, requisitos, taxas, prazos e demais condições dependem de análise e da documentação aplicável a cada operação.'],
  ['Propostas e contratação','Nenhum conteúdo desta página substitui uma proposta formal ou os documentos contratuais de um produto. Consulte as condições apresentadas pela equipe responsável antes de tomar uma decisão.'],
- ['Formulário e plataformas','O formulário valida os campos localmente e não envia nem armazena solicitações. Os links de acesso às plataformas ainda estão em atualização. Os canais de atendimento estão disponíveis na página de contato.'],
+ ['Formulário e plataformas','O formulário valida os campos localmente e não envia nem armazena solicitações. A página de acesso reúne os links oficiais das plataformas externas, que possuem seus próprios termos e condições. Os canais de atendimento estão disponíveis na página de contato.'],
  ['Uso dos conteúdos','Marcas, imagens e demais materiais apresentados têm finalidade institucional. O uso de materiais de terceiros deve respeitar as autorizações e os direitos aplicáveis.'],
  ['Estruturart Golden','A página institucional da Estruturart Golden não constitui oferta de investimento, promessa de rentabilidade ou garantia de retorno. Informações específicas devem ser confirmadas nos materiais oficiais do produto.'],
  ['Versão e atualizações','Os termos oficiais e a identificação jurídica completa serão disponibilizados antes da ativação de serviços. Os conteúdos e recursos demonstrativos poderão ser atualizados.'],

@@ -12,3 +12,7 @@
 
 .brand-gallery--golden .brand-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:600px){.brand-gallery--golden .brand-gallery-grid{grid-template-columns:1fr}}
+.brand-gallery--pay .brand-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pay-gallery-title{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.pay-gallery-title>img{width:151px;height:48px;object-fit:contain}
+@media(max-width:800px){.brand-gallery--pay .brand-gallery-grid{grid-template-columns:1fr}.brand-gallery--pay figure img{height:360px}}
