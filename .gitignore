@@ -30,3 +30,4 @@ dist-ssr
 
 # Intermediate task files
 work/
+.env*

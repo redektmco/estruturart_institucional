@@ -3,6 +3,7 @@ import { ContactSection } from './components/ContactSection'
 import { HeroCarousel } from './components/HeroCarousel'
 import { CardPhoto } from './components/CardPhoto'
 import { homeProductRoutes, homeServiceRoutes } from './data/pages'
+import { links } from './data/links'
 import './App.css'
 import './motion.css'
 
@@ -16,6 +17,7 @@ const products = [
 const services = [
   { name: 'Capital de giro', text: 'Oferecemos as melhores opções de Capital de Giro para fortalecer o caixa, impulsionar o crescimento e atender às necessidades do seu negócio.' },
   { name: 'Conta Escrow', text: 'Proteção adicional para operações que precisam de uma conta com condições específicas para a movimentação e liberação dos recursos.' },
+  { name: 'Emissão de Dívidas/CCB', text: 'Emita CCBs sem precisar contratar uma conta e sem mensalidades. Uma solução para empresas que concedem crédito.' },
   { name: 'Operações estruturadas', text: 'Financiamentos no Brasil e no exterior para capital de giro, investimentos em bens de capital e alongamento do perfil da dívida.' },
 ]
 const faqs = [
@@ -47,21 +49,21 @@ function HomePage() {
         </div>
       </section>
       <section className="golden wide" id="golden" aria-labelledby="golden-title">
-        <div className="golden-copy"><h2 id="golden-title">Estruturart Golden</h2><p>O ativo digital do grupo tem site próprio.</p><CTA href="/golden">Conhecer a Estruturart Golden</CTA></div>
+        <div className="golden-copy"><h2 id="golden-title">Estruturart Golden</h2><p>O ativo digital do grupo tem site próprio.</p><CTA href="/golden">Conhecer a Estruturart Golden</CTA><a className="text-link golden-site" href={links.golden} target="_blank" rel="noopener noreferrer">estruturartgolden.com <span aria-hidden="true">↗</span></a></div>
         <img className="golden-official" src={image('golden-detalhe-studio')} alt="Moeda oficial Estruturart Golden com o símbolo do grupo em relevo" width="1254" height="1254" loading="lazy" />
       </section>
       <section className="services wide" id="servicos" aria-labelledby="services-title">
-        <div className="section-head"><h2 id="services-title">Nossos serviços</h2><Link className="text-link" to="/servicos">Ver todas as soluções <span aria-hidden="true">→</span></Link></div>
+        <div className="section-head"><h2 id="services-title">Nossos serviços</h2><CTA href="/servicos">Ver todas as soluções</CTA></div>
         <div className="service-cards">
           {services.map(s => <article className="service-card" key={s.name}><h3>{s.name}</h3><p>{s.text}</p><CTA light href={`/${homeServiceRoutes[s.name]}`}>Ver mais</CTA></article>)}
         </div>
       </section>
       <section className="history content" id="historia" aria-labelledby="history-title">
-        <div><h2 id="history-title">Uma história que<br />começou antes<br />do digital.</h2><p>A Estruturart foi fundada em 2000 e construiu, ao longo de 26 anos, uma base de clientes, premiações e presença na imprensa. Essa trajetória sustenta cada operação que o grupo estrutura hoje.</p></div>
+        <div><h2 id="history-title">Uma história que<br />começou antes<br />do digital.</h2><p>A Estruturart foi fundada em 2000 e construiu, ao longo dos anos, uma base de clientes, premiações e presença na imprensa. Essa trajetória sustenta cada operação que o grupo estrutura hoje.</p></div>
         <div className="founder"><div className="founder-orange" /><div className="founder-black" /><img src={image('founder')} alt="Representante da Estruturart, de braços cruzados, usando um terno azul" width="1086" height="1448" loading="lazy" /></div>
       </section>
       <section className="app-section content" aria-labelledby="app-title">
-        <div className="app-art"><img className="phones" src={image('app')} alt="Aplicativo Estruturart em dois celulares" width="1055" height="1491" loading="lazy" /><span className="app-tag tag-info"><span aria-hidden="true">◷</span> Informação na hora</span><span className="app-tag tag-tap"><img src="/images/tap.svg" alt="" />Antecipação a um toque</span></div>
+        <div className="app-art"><img className="phones" src={image('app')} alt="Aplicativo Estruturart em dois celulares" width="1055" height="1491" loading="lazy" /><div className="app-download"><strong>Baixe o APP</strong><a href={links.appStore} target="_blank" rel="noopener noreferrer">App Store</a><a href={links.googlePlay} target="_blank" rel="noopener noreferrer">Google Play</a></div><span className="app-tag tag-info"><span aria-hidden="true">◷</span> Informação na hora</span><span className="app-tag tag-tap"><img src="/images/tap.svg" alt="" />Antecipação a um toque</span></div>
         <div className="app-copy"><h2 id="app-title">A operação<br />inteira na<br />palma da mão.</h2><CTA href="/contato?produto=Estruturart%20Pay">Solicitar condições</CTA></div>
       </section>
       <section className="benefits content" aria-label="Vantagens do aplicativo">

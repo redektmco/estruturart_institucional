@@ -6,8 +6,9 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { Arrow } from './UI'
 import { useSiteMotion } from '../useSiteMotion'
 import { routeMeta } from '../data/pages'
+import { links } from '../data/links'
 
-const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Estruturart Golden'],['/quem-somos','Quem Somos'],['/clientes','Clientes']]
+const nav = [['/estruturart-pay','Estruturart Pay'],['/conta-digital-pj','Conta Digital PJ'],['/servicos','Serviços'],['/antecipacao-de-recebiveis','Antecipação de Recebíveis'],['/securitizadora','Securitizadora'],['/golden','Estruturart Golden'],['/quem-somos','Quem Somos'],['/clientes','Clientes'],['/premiacoes','Premiações']]
 export function Header() {
   const [menu,setMenu]=useState(false)
   const location=useLocation()
@@ -20,11 +21,11 @@ export function Header() {
 }
 export function Footer() {
   return <footer className="footer dark"><div className="wide"><div className="footer-columns">
-    <div><h2>Institucional</h2><Link to="/quem-somos">Quem Somos</Link><Link to="/clientes">Clientes</Link><Link to="/nossa-historia">Nossa História</Link><Link to="/premiacoes">Premiações</Link><Link to="/na-midia">Estruturart na Mídia</Link></div>
+    <div><h2>Institucional</h2><Link to="/quem-somos">Quem Somos</Link><Link to="/clientes">Clientes</Link><Link to="/nossa-historia">Nossa História</Link><Link to="/premiacoes">Premiações</Link><Link to="/na-midia">Estruturart na Mídia</Link><a href={links.privacy} target="_blank" rel="noopener noreferrer">Política de Privacidade</a><a href={links.terms} target="_blank" rel="noopener noreferrer">Termo de Uso</a></div>
     <div><h2>Produtos</h2><Link to="/antecipacao-de-recebiveis">Antecipação de Recebíveis</Link><Link to="/conta-digital-pj">Conta Digital PJ</Link><Link to="/conta-escrow">Conta Escrow</Link><Link to="/securitizadora">Estruturart Securitizadora</Link><Link to="/estruturart-pay">Estruturart Pay</Link><Link to="/golden">Estruturart Golden</Link></div>
     <div><h2>Acesso</h2><Link to="/acesso#conta">Acessar Conta</Link><Link to="/acesso#antecipacao">Plataforma de Antecipação</Link><Link to="/acesso#pay">Plataforma Estruturart Pay</Link><Link to="/contato">Fale com um especialista</Link></div>
-    <div className="footer-contact"><h2>Contato</h2><a href={`mailto:${contact.email}`}>{contact.email}</a><a href={contact.phoneHref}>{contact.phone}</a><p>{contact.address}</p><p>Horário de atendimento: {contact.hours}</p></div>
-  </div><div className="footer-brand"><Link to="/" aria-label="Voltar ao início"><img src={image('logo-light')} alt="Estruturart Capital" width="132" height="44"/></Link><div className="socials" aria-label="Redes sociais">{['X','Instagram','YouTube','LinkedIn','Facebook'].map((s,i)=><Link to={`/contato?canal=${s.toLowerCase()}`} key={s} aria-label={`${s} — canal em breve`}><SocialIcon index={i}/></Link>)}</div></div><div className="footer-bottom"><p>© 2026 Estruturart. Todos os direitos reservados.</p><Link to="/politica-de-privacidade">Política de Privacidade</Link><span aria-hidden="true">|</span><Link to="/termos-de-uso">Termos de Uso</Link></div></div></footer>
+    <div className="footer-contact"><h2>Contato</h2><a href={`mailto:${contact.email}`}>{contact.email}</a><a href={contact.phoneHref}>{contact.phone}</a><a href={contact.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp</a><p>{contact.address}</p><p>Horário de atendimento: {contact.hours}</p></div>
+  </div><div className="footer-brand"><Link to="/" aria-label="Voltar ao início"><img src={image('logo-light')} alt="Estruturart Capital" width="132" height="44"/></Link><div className="socials" aria-label="Redes sociais">{['X','Instagram','YouTube','LinkedIn','Facebook'].map((s,i)=><Link to={`/contato?canal=${s.toLowerCase()}`} key={s} aria-label={`${s} — canal em breve`}><SocialIcon index={i}/></Link>)}</div></div><div className="footer-bottom"><p>© 2026 Estruturart. Todos os direitos reservados.</p><a href={links.privacy} target="_blank" rel="noopener noreferrer">Política de Privacidade</a><span aria-hidden="true">|</span><a href={links.terms} target="_blank" rel="noopener noreferrer">Termo de Uso</a></div></div></footer>
 }
 function RouteEffects() {
   const {pathname,hash}=useLocation()

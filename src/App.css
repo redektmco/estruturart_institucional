@@ -4,7 +4,7 @@
 
 /* Header */
 .header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:28px;min-height:var(--header-height);padding:8px max(32px,calc((100% - 1240px) / 2));background:#f9f9f9e8;-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid #0000000f}
-.brand{flex-shrink:0;width:108px}.brand img{width:108px;height:36px;object-fit:contain}
+.brand{flex-shrink:0;width:144px}.brand img{width:144px;height:48px;object-fit:contain}
 .navigation{display:flex;align-items:center;justify-content:center;gap:24px;flex:1}
 .navigation a{font-size:14px;color:#2f2f2f;white-space:nowrap;transition:color .2s}.navigation a:hover{color:var(--orange)}
 .platform{display:flex;align-items:center;gap:10px;flex-shrink:0;border:0;border-radius:999px;background:var(--orange);color:#fff;padding:5px 5px 5px 16px;font-size:13.5px;font-weight:500;white-space:nowrap}
@@ -68,7 +68,7 @@
 
 /* Services */
 .services{padding-top:clamp(56px,7vw,88px)}
-.service-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.service-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .service-card{display:flex;flex-direction:column;align-items:flex-start;min-height:250px;padding:26px 22px 22px;border-radius:20px;background:#000;color:#fff}
 .service-card h3{font-size:19px;font-weight:500;line-height:1.25;margin-bottom:10px}
 .service-card p{font-size:14.5px;line-height:1.5;color:#bdbdbd;margin-bottom:20px}
@@ -91,6 +91,9 @@
 .app-tag{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 6px 20px #00000014}
 .tag-info{left:4%;bottom:56px;background:var(--orange);color:#fff}.tag-info span{font-size:18px}
 .tag-tap{right:2%;top:150px;background:#fff}.tag-tap img{width:18px}
+.app-download{position:absolute;z-index:3;left:50%;bottom:8px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:16px;background:#000;color:#fff;white-space:nowrap;box-shadow:0 8px 24px #0003}.app-download strong{font-size:14px;margin-right:4px}.app-download a{padding:7px 12px;border-radius:999px;background:var(--orange);font-size:12.5px;font-weight:600}.app-download a:hover{background:#fff;color:#000}
+.golden-site{margin-top:18px;color:#fff;border-color:#666}
+.hero-badge{position:absolute;z-index:4;right:9%;top:50%;transform:translateY(-50%);display:grid;place-items:center;padding:22px 32px;border-radius:20px;background:#fff;box-shadow:0 12px 40px #0006}.hero-badge img{width:clamp(150px,17vw,260px);height:auto}
 .app-copy h2{font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:.98;letter-spacing:-.035em;margin-bottom:24px}
 
 /* Benefits */
@@ -139,7 +142,7 @@
 .footer button{border:0;background:transparent;padding:0}
 .footer a:hover,.footer button:hover{color:white;text-decoration:underline}
 .footer-brand{display:flex;align-items:end;justify-content:space-between;margin-top:48px;padding-bottom:22px;border-bottom:1px solid #333}
-.footer-brand img{width:112px}
+.footer-brand img{width:156px}
 .socials{display:flex;align-items:center;gap:18px}
 .socials button{min-width:24px;min-height:32px;font-size:20px}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin-top:24px;color:#aaa;font-size:12px}
@@ -196,7 +199,7 @@
 @media(max-width:600px){
   .content,.wide{width:calc(100% - 32px)}
   .header{padding-inline:16px;gap:8px 10px}
-  .brand,.brand img{width:96px}
+  .brand,.brand img{width:112px}.brand img{height:38px}
   .platform{gap:8px;padding:4px 4px 4px 12px;font-size:12.5px}.platform .arrow{width:24px;height:24px;font-size:14px}
   .menu-toggle{width:36px}
   .cta{min-height:40px;padding-left:18px;font-size:14px}.arrow{width:28px;height:28px;font-size:16px}

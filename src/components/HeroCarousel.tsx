@@ -39,6 +39,19 @@ const slides = [
     width: 1920,
     height: 1080,
   },
+  {
+    id: 'pay',
+    title: ['Estruturart Pay.', 'Cada venda conta.'],
+    description: 'Máquinas próprias, condições ajustadas ao volume do negócio e acompanhamento das vendas em tempo real.',
+    cta: 'Conheça a Estruturart Pay',
+    href: '/estruturart-pay',
+    image: '/images/pay-equipamentos-studio.webp',
+    mobileImage: '/images/pay-equipamentos-studio.webp',
+    alt: 'Maquininhas Estruturart Pay organizadas em fileiras',
+    width: 1448,
+    height: 1086,
+    badge: '/images/logo-pay.webp',
+  },
 ]
 
 function Chevron({ previous = false }: { previous?: boolean }) {
@@ -64,7 +77,7 @@ export function HeroCarousel() {
     let timer: ReturnType<typeof setTimeout> | undefined
     const schedule = () => {
       clearTimeout(timer)
-      if (!document.hidden) timer = setTimeout(() => setActive(index => (index + 1) % slides.length), 8000)
+      if (!document.hidden) timer = setTimeout(() => setActive(index => (index + 1) % slides.length), 5000)
     }
     schedule()
     document.addEventListener('visibilitychange', schedule)
@@ -102,6 +115,7 @@ export function HeroCarousel() {
         />
       </picture>)}
     </div>
+    {slide.badge && <div className="hero-badge" aria-hidden="true"><img src={slide.badge} alt="" width="151" height="48" /></div>}
     <div className="hero-content" aria-live={paused || hovered || focused ? 'polite' : 'off'} aria-atomic="true">
       <div className="hero-copy" key={slide.id} role="group" aria-roledescription="slide" aria-label={`${active + 1} de ${slides.length}`}>
         <span className="sr-only">{slide.alt}</span>

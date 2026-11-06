@@ -14,11 +14,11 @@ export const solutions: Solution[] = [
   },
   {
     slug:'conta-digital-pj',name:'Conta Digital PJ',category:'Conta e gestão',headline:'Toda a sua operação.\nUma única conta.',image:'conta',alt:'Empresária gerenciando sua conta pelo celular',
-    description:'Pix, transferências, pagamentos e extratos em uma plataforma para o dia a dia financeiro da sua empresa.',
+    description:'Pix, transferências, pagamentos, extratos, emissão de boletos e gestão de cobranças em uma plataforma para o dia a dia financeiro da sua empresa.',
     introTitle:'Menos caminhos.\nMais controle.',intro:'Centralizar a movimentação ajuda a acompanhar o que entra, o que sai e o que vem pela frente. A conta digital PJ reúne os recursos essenciais para operar com mais organização.',
-    benefits:[['Movimente o negócio','Pix, transferências e pagamentos para acompanhar o ritmo da empresa.'],['Enxergue cada movimento','Extratos e informações para manter a rotina financeira sob controle.'],['Conecte suas soluções','Uma estrutura que aproxima a conta, os recebíveis e os meios de pagamento.']],
+    benefits:[['Movimente o negócio','Pix, transferências e pagamentos para acompanhar o ritmo da empresa.'],['Boletos e cobranças','Emissão de boletos e gestão de cobranças na mesma plataforma.'],['Enxergue cada movimento','Extratos e informações para manter a rotina financeira sob controle.'],['Conecte suas soluções','Uma estrutura que aproxima a conta, os recebíveis e os meios de pagamento.']],
     steps:[['Apresente sua empresa','Converse com a equipe sobre o perfil e as necessidades da operação.'],['Confira os requisitos','Receba orientação sobre os documentos e as condições para abertura.'],['Organize sua rotina','Com a conta habilitada, acompanhe suas movimentações na plataforma.']],
-    faqs:[['A conta é destinada a empresas?','Sim. A proposta da conta digital PJ é atender a rotina financeira de pessoas jurídicas, conforme os requisitos de abertura.'],['O que posso fazer na conta?','A solução reúne Pix, transferências, pagamentos e extratos. Confirme os recursos disponíveis nas condições da sua conta.'],['Existe uma solução para operações com proteção adicional?','A conta escrow atende operações que exigem regras específicas de movimentação e liberação de recursos.']],related:['conta-escrow','estruturart-pay'],
+    faqs:[['A conta é destinada a empresas?','Sim. A proposta da conta digital PJ é atender a rotina financeira de pessoas jurídicas, conforme os requisitos de abertura.'],['O que posso fazer na conta?','A solução reúne Pix, transferências, pagamentos, extratos, emissão de boletos e gestão de cobranças. Confirme os recursos disponíveis nas condições da sua conta.'],['Existe uma solução para operações com proteção adicional?','A conta escrow atende operações que exigem regras específicas de movimentação e liberação de recursos.']],related:['conta-escrow','estruturart-pay'],
   },
   {
     slug:'conta-escrow',name:'Conta Escrow',category:'Conta e proteção',headline:'Cada operação.\nSuas próprias regras.',image:'conta-escrow',alt:'Executiva assinando o contrato de uma operação em reunião',
@@ -53,6 +53,14 @@ export const solutions: Solution[] = [
     faqs:[['Para que serve o capital de giro?','Para apoiar as necessidades da operação, como pagamentos, estoque e o equilíbrio entre entradas e saídas.'],['A aprovação é automática?','Não. As possibilidades dependem de análise e dos requisitos de cada solução.'],['Quais são as taxas e os prazos?','As condições variam conforme a análise e a modalidade. Solicite uma proposta para conhecer os detalhes.']],related:['operacoes-estruturadas','antecipacao-de-recebiveis'],
   },
   {
+    slug:'emissao-de-dividas-ccb',name:'Emissão de Dívidas/CCB',category:'Crédito para empresas',headline:'Emita CCBs.\nSem mensalidade.',image:'capital-de-giro',alt:'Empreendedora conferindo pedidos no estoque da empresa',
+    description:'Emita Cédulas de Crédito Bancário (CCB) sem precisar contratar uma conta e sem mensalidades. Uma solução para empresas que concedem crédito.',
+    introTitle:'Crédito concedido.\nEmissão simplificada.',intro:'Empresas que concedem crédito precisam formalizar cada operação. A Estruturart oferece a emissão de CCBs sem a necessidade de contratar uma conta e sem mensalidades.',
+    benefits:[['Sem conta obrigatória','Emita CCBs sem precisar contratar uma conta.'],['Sem mensalidades','Uma solução para usar quando a operação exigir.'],['Para quem concede crédito','Apoio à formalização das operações de crédito da sua empresa.']],
+    steps:[['Conte sobre a operação','Informe o perfil da empresa e as operações de crédito que pretende formalizar.'],['Conheça as condições','Receba orientação sobre requisitos, documentos e condições aplicáveis.'],['Formalize a operação','Com tudo definido, emita a CCB conforme as condições acordadas.']],
+    faqs:[['O que é uma CCB?','A Cédula de Crédito Bancário é um título que formaliza uma operação de crédito.'],['Preciso contratar uma conta?','Não. A emissão de CCBs não exige a contratação de uma conta.'],['Existe mensalidade?','Não. Consulte a equipe para conhecer as condições aplicáveis a cada emissão.']],related:['capital-de-giro','operacoes-estruturadas'],
+  },
+  {
     slug:'operacoes-estruturadas',name:'Operações estruturadas',category:'Soluções sob medida',headline:'Sua empresa é única.\nA estrutura também.',image:'operacoes-estruturadas',alt:'Especialistas discutindo uma estrutura financeira',
     description:'Financiamentos de curto e longo prazo, no Brasil e no exterior, para capital de giro, investimentos em bens de capital e alongamento do perfil da dívida.',
     introTitle:'Do projeto ao recurso.\nUma estrutura completa.',intro:'A Estruturart Capital desenvolve projetos de viabilidade técnico-econômica para apoiar a captação de recursos por empresas. A assessoria conecta as necessidades de cada negócio a agentes repassadores de recursos do Governo Federal, bancos privados, fundos de investimento e investidores, buscando condições adequadas para financiamentos de médio e longo prazo.',
@@ -64,7 +72,7 @@ export const solutions: Solution[] = [
 export const findSolution = (slug: string) => solutions.find(item => item.slug === slug)
 export const productNames = [...solutions.map(s => s.name), 'Estruturart Golden']
 export const homeProductRoutes: Record<string,string> = {antecipacao:'antecipacao-de-recebiveis',conta:'conta-digital-pj',securitizadora:'securitizadora',pay:'estruturart-pay'}
-export const homeServiceRoutes: Record<string,string> = {'Capital de giro':'capital-de-giro','Conta Escrow':'conta-escrow','Operações estruturadas':'operacoes-estruturadas'}
+export const homeServiceRoutes: Record<string,string> = {'Capital de giro':'capital-de-giro','Conta Escrow':'conta-escrow','Operações estruturadas':'operacoes-estruturadas','Emissão de Dívidas/CCB':'emissao-de-dividas-ccb'}
 export const extraRoutes = ['servicos','golden','quem-somos','clientes','nossa-historia','premiacoes','na-midia','contato','acesso','politica-de-privacidade','termos-de-uso']
 export const allPaths = ['/',...solutions.map(s => '/'+s.slug),...extraRoutes.map(s => '/'+s)]
 export const routeMeta: Record<string,{title:string;description:string}> = {
