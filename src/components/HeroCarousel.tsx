@@ -50,7 +50,6 @@ const slides = [
     alt: 'Maquininha Estruturart Pay sobre uma mesa de madeira, ao lado de uma xícara de café',
     width: 1672,
     height: 941,
-    badge: '/images/logo-pay.webp',
   },
 ]
 
@@ -115,7 +114,6 @@ export function HeroCarousel() {
         />
       </picture>)}
     </div>
-    {slide.badge && <div className="hero-badge" aria-hidden="true"><img src={slide.badge} alt="" width="151" height="48" /></div>}
     <div className="hero-content" aria-live={paused || hovered || focused ? 'polite' : 'off'} aria-atomic="true">
       <div className="hero-copy" key={slide.id} role="group" aria-roledescription="slide" aria-label={`${active + 1} de ${slides.length}`}>
         <span className="sr-only">{slide.alt}</span>
