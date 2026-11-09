@@ -86,12 +86,14 @@
 
 /* App */
 .app-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding-top:clamp(64px,8vw,104px)}
-.app-art{position:relative;height:500px}
-.phones{position:relative;z-index:1;width:auto;height:100%;margin-inline:auto;object-fit:contain}
-.app-tag{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 6px 20px #00000014}
-.tag-info{left:4%;bottom:56px;background:var(--orange);color:#fff}.tag-info span{font-size:18px}
-.tag-tap{right:2%;top:150px;background:#fff}.tag-tap img{width:18px}
-.app-download{position:absolute;z-index:3;left:50%;bottom:8px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:16px;background:#000;color:#fff;white-space:nowrap;box-shadow:0 8px 24px #0003}.app-download strong{font-size:14px;margin-right:4px}.app-download a{padding:7px 12px;border-radius:999px;background:var(--orange);font-size:12.5px;font-weight:600}.app-download a:hover{background:#fff;color:#000}
+.app-art{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px}
+.phones{position:relative;z-index:1;width:auto;height:440px;max-width:100%;object-fit:contain}
+/* Etiquetas e links das lojas ficam abaixo da figura, sem cobrir os celulares. */
+.app-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0;padding:0;list-style:none}
+.app-tag{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 6px 20px #00000014}
+.tag-info{background:var(--orange);color:#fff}.tag-info span{font-size:18px}
+.tag-tap{background:#fff}.tag-tap img{width:18px}
+.app-download{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;padding:10px 12px;border-radius:16px;background:#000;color:#fff;box-shadow:0 8px 24px #0003}.app-download strong{font-size:14px;margin-right:4px}.app-download a{padding:7px 12px;border-radius:999px;background:var(--orange);font-size:12.5px;font-weight:600}.app-download a:hover{background:#fff;color:#000}
 .golden-site{margin-top:18px;color:#fff;border-color:#666}
 .app-copy h2{font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:.98;letter-spacing:-.035em;margin-bottom:24px}
 
@@ -171,8 +173,7 @@
   .golden>img{order:-1;height:220px;min-height:0;-webkit-mask-image:linear-gradient(0deg,transparent,#000 50%);mask-image:linear-gradient(0deg,transparent,#000 50%)}
   .golden-copy{padding:8px 32px 36px}
   .founder{height:380px}.founder-orange{height:150px}.founder-black{top:175px}
-  .app-art{height:420px}
-  .tag-info{left:0}.tag-tap{right:0;top:120px}
+  .phones{height:380px}
   .contact input,.contact select{min-height:46px;padding-inline:12px;font-size:13px}
   .faq .wide{display:block}.faq h2{margin-bottom:16px}
   .footer-columns{grid-template-columns:1fr 1fr;gap:28px}
@@ -218,8 +219,8 @@
   .history p{font-size:16px}
   .founder{width:min(320px,100%);height:360px;align-self:center}.founder-orange{height:140px}.founder-black{top:165px}
   .app-section{display:flex;flex-direction:column-reverse;align-items:stretch;gap:28px}
-  .app-art{width:min(300px,calc(100% - 40px));height:400px;align-self:center}
-  .tag-info{left:-14px;bottom:36px}.tag-tap{right:-18px;top:110px}
+  .app-art{width:100%;align-self:center}
+  .phones{height:340px}
   .app-copy h2{margin-bottom:20px}
   .benefits{display:flex;flex-direction:column-reverse;gap:28px}
   .benefits-image{border-radius:16px}

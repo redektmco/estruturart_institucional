@@ -21,11 +21,11 @@ const slides = [
     description: 'Uma conta digital PJ pensada para simplificar sua rotina financeira e dar mais espaço ao que realmente importa: seu negócio.',
     cta: 'Abra sua conta',
     href: '/contato?produto=Conta%20Digital%20PJ',
-    image: '/images/hero-celular.webp',
-    mobileImage: '/images/hero-celular-mobile.webp',
-    alt: 'Conta digital Estruturart Capital no celular e cartão nas mãos de uma cliente',
-    width: 1672,
-    height: 941,
+    image: '/images/hero-cartao.webp',
+    mobileImage: '/images/hero-cartao-mobile.webp',
+    alt: 'Cartão Estruturart Capital no bolso de uma calça jeans. A conta digital que descomplica o seu negócio.',
+    width: 1920,
+    height: 1080,
   },
   {
     id: 'cartao-bolso',
@@ -100,8 +100,8 @@ export function HeroCarousel() {
   >
     <div className="hero-photos" aria-hidden="true">
       {slides.map((item, index) => <picture
-        key={item.image}
-        className={`hero-photo${item.image === slide.image ? ' is-active' : ''}`}
+        key={item.id}
+        className={`hero-photo${index === active ? ' is-active' : ''}`}
       >
         <source media="(max-width: 760px)" srcSet={item.mobileImage} width="960" height="800" />
         <img

@@ -16,8 +16,6 @@
   .hero-copy p{animation:hero-copy-in .8s .1s var(--motion-ease) both}
   .hero-copy .cta{animation:hero-copy-in .8s .2s var(--motion-ease) both}
   .app-art[data-in-view="true"][data-reveal="complete"] .phones{animation:art-drift 7s ease-in-out infinite}
-  .app-art[data-in-view="true"][data-reveal="complete"] .tag-info{animation:tag-drift 5s ease-in-out infinite}
-  .app-art[data-in-view="true"][data-reveal="complete"] .tag-tap{animation:tag-drift 6s ease-in-out -2s infinite}
   .product{transition:box-shadow .6s var(--motion-ease),translate .6s var(--motion-ease)}
   .product-image{transition:scale .9s var(--motion-ease)}
   .product:hover{translate:0 -4px;box-shadow:0 0 0 1px #0000000b,0 18px 40px #00000014}

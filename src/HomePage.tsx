@@ -10,7 +10,7 @@ import './motion.css'
 const image = (name: string) => `/images/${name}.webp`
 const products = [
   { id: 'antecipacao', name: 'Antecipação de Recebíveis', description: 'O valor das vendas no cartão ou em duplicatas, disponível antes do vencimento. Capital de giro sem contratar dívida.', image: 'recebiveis', alt: 'Empresário revisando relatórios de vendas ao lado do notebook' },
-  { id: 'conta', name: 'Conta Digital PJ', description: 'Pix, transferências, pagamentos e extratos em uma única plataforma. Inclui conta escrow para operações que exigem proteção adicional.', image: 'conta', alt: 'Empresária consultando o celular em seu estabelecimento' },
+  { id: 'conta', name: 'Conta Digital PJ', description: 'Pix, transferências, pagamentos, extratos, emissão de boletos e gestão de cobranças em uma única plataforma. Inclui conta escrow para operações que exigem proteção adicional.', image: 'conta', alt: 'Empresária consultando o celular em seu estabelecimento' },
   { id: 'securitizadora', name: 'Estruturart Securitizadora', description: 'Operações estruturadas que convertem carteiras de recebíveis em novas fontes de capital, com governança e segurança documental.', image: 'securitizadora', alt: 'Profissionais analisando os documentos de uma operação financeira' },
   { id: 'pay', name: 'Estruturart Pay', description: 'Máquinas próprias, taxas ajustadas ao volume do negócio e acompanhamento das vendas em tempo real pelo aplicativo.', image: 'pay', alt: 'Cliente pagando com cartão na maquininha de um café' },
 ]
@@ -63,7 +63,7 @@ function HomePage() {
         <div className="founder"><div className="founder-orange" /><div className="founder-black" /><img src={image('founder')} alt="Representante da Estruturart, de braços cruzados, usando um terno azul" width="1086" height="1448" loading="lazy" /></div>
       </section>
       <section className="app-section content" aria-labelledby="app-title">
-        <div className="app-art"><img className="phones" src={image('app')} alt="Aplicativo Estruturart em dois celulares" width="1055" height="1491" loading="lazy" /><div className="app-download"><strong>Baixe o APP</strong><a href={links.appStore} target="_blank" rel="noopener noreferrer">App Store</a><a href={links.googlePlay} target="_blank" rel="noopener noreferrer">Google Play</a></div><span className="app-tag tag-info"><span aria-hidden="true">◷</span> Informação na hora</span><span className="app-tag tag-tap"><img src="/images/tap.svg" alt="" />Antecipação a um toque</span></div>
+        <div className="app-art"><img className="phones" src={image('app')} alt="Aplicativo Estruturart em dois celulares" width="1055" height="1491" loading="lazy" /><ul className="app-tags"><li className="app-tag tag-info"><span aria-hidden="true">◷</span> Informação na hora</li><li className="app-tag tag-tap"><img src="/images/tap.svg" alt="" />Antecipação a um toque</li></ul><div className="app-download"><strong>Baixe o APP</strong><a href={links.appStore} target="_blank" rel="noopener noreferrer">App Store</a><a href={links.googlePlay} target="_blank" rel="noopener noreferrer">Google Play</a></div></div>
         <div className="app-copy"><h2 id="app-title">A operação<br />inteira na<br />palma da mão.</h2><CTA href="/contato?produto=Estruturart%20Pay">Solicitar condições</CTA></div>
       </section>
       <section className="benefits content" aria-label="Vantagens do aplicativo">
