@@ -25,9 +25,11 @@
 /* Hero */
 .hero{position:relative;isolation:isolate;display:flex;align-items:center;width:min(1640px,calc(100% - 48px));min-height:clamp(520px,calc(100svh - var(--header-height) - 48px),680px);margin:24px auto 0;border:1px solid #252525;border-radius:28px;overflow:hidden;background:#0b0b0b;color:#fff;box-shadow:0 4px 20px #0000000a}
 .hero-photos{position:absolute;inset:0;z-index:-2}
-.hero-photo{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .7s ease}
-.hero-photo img{width:100%;height:100%;object-fit:contain;object-position:right center}
-.hero-photo.is-active{opacity:1}
+/* Troca em fade cruzado: o banner novo aparece por cima enquanto o anterior segue visível e só some depois (sem 'buraco' preto no meio). */
+.hero-photo{position:absolute;inset:0;display:flex;justify-content:flex-end;width:100%;height:100%;opacity:0;transition:opacity .8s ease .8s}
+.hero-photo.is-active{z-index:1;opacity:1;transition-delay:0s}
+/* A imagem sempre ocupa a altura toda, alinhada à direita (em telas estreitas só o lado esquerdo, já escuro, é cortado) e a borda esquerda esmaece no fundo, sem corte seco. */
+.hero-photo img{flex:none;width:auto;max-width:none;height:100%;object-fit:contain;object-position:right center;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16%);mask-image:linear-gradient(90deg,transparent 0,#000 16%)}
 .hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080808 0%,#080808 14%,#080808d9 30%,#08080833 52%,transparent 70%),linear-gradient(0deg,#08080866,transparent 24%)}
 .hero::after{content:'';position:absolute;inset:14px;z-index:3;border:1px solid #ffffff52;border-radius:16px;pointer-events:none}
 .hero-content,.hero-controls{width:min(1240px,calc(100% - 96px));margin-inline:auto}
@@ -182,7 +184,8 @@
     .hero{display:block;width:calc(100% - 24px);min-height:0;margin-top:12px;border-radius:24px;background:#080808}
   .hero::after{inset:9px;border-radius:15px}
   .hero-photos{position:relative;inset:auto;aspect-ratio:6/5}
-  .hero-photo img{object-position:center}
+  .hero-photo{display:block}
+  .hero-photo img{width:100%;object-position:center;-webkit-mask-image:none;mask-image:none}
   .hero::before{inset:0 0 auto;aspect-ratio:6/5;background:linear-gradient(0deg,#080808,transparent 22%)}
   .hero-content,.hero-controls{width:calc(100% - 48px)}
   .hero-copy{width:100%;padding-block:8px 102px}
