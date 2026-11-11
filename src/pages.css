@@ -321,3 +321,8 @@ main:has(>.faq:last-child)+.footer{padding-top:8px}
 @media(max-width:600px){.clients-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.clients-grid li{padding:18px 14px;border-radius:14px}.clients-grid img{height:75px}.inner-visual>.official-card-photo{height:auto;aspect-ratio:570/428;border-radius:18px}.access-request{padding-top:48px}}
 @media(min-width:1200px){.navigation{gap:16px}.navigation a{font-size:13px}.header{gap:20px}}
 @media(min-width:1200px) and (max-width:1359px){.navigation{gap:12px}.navigation a{font-size:12px}.header{gap:16px}}
+
+/* Conta Digital PJ: no celular o internet banking bloqueia o acesso, então mostramos os links do aplicativo no lugar. */
+.access-app{display:none;margin-top:auto}
+.access-app p{flex:none;margin-bottom:4px;color:#aaa;font-size:14px;line-height:1.5}
+@media (max-width:760px),(hover:none) and (pointer:coarse){.access-web{display:none}.access-app{display:block}}
