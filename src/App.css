@@ -121,6 +121,7 @@
 .contact select{appearance:auto;padding-right:10px}
 .contact form>.cta{align-self:flex-start;margin-top:8px}
 .form-note{color:#737373;font-size:12px;line-height:1.5}
+.form-note a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .form-feedback{padding:14px;border-radius:12px;background:#fff0e9;font-size:14px;line-height:1.5}
 
 /* FAQ */

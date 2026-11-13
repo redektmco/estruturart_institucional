@@ -77,6 +77,48 @@
               "name": "origem",
               "type": "string",
               "value": "={{ $json.body.origem || '' }}"
+            },
+            {
+              "id": "g1",
+              "name": "whatsapp",
+              "type": "string",
+              "value": "={{ String($json.body.whatsapp || '').replace(/\\D/g, '') }}"
+            },
+            {
+              "id": "g2",
+              "name": "form_origem",
+              "type": "string",
+              "value": "={{ $json.body.form_origem || '' }}"
+            },
+            {
+              "id": "g3",
+              "name": "gclid",
+              "type": "string",
+              "value": "={{ String($json.body.gclid || '').trim() }}"
+            },
+            {
+              "id": "g4",
+              "name": "utm_source",
+              "type": "string",
+              "value": "={{ String($json.body.utm_source || '').trim() }}"
+            },
+            {
+              "id": "g5",
+              "name": "utm_medium",
+              "type": "string",
+              "value": "={{ String($json.body.utm_medium || '').trim() }}"
+            },
+            {
+              "id": "g6",
+              "name": "utm_campaign",
+              "type": "string",
+              "value": "={{ String($json.body.utm_campaign || '').trim() }}"
+            },
+            {
+              "id": "g7",
+              "name": "utm_term",
+              "type": "string",
+              "value": "={{ String($json.body.utm_term || '').trim() }}"
             }
           ]
         },
@@ -113,6 +155,16 @@
             {
               "id": "c2",
               "leftValue": "={{ $json.nome }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "c3",
+              "leftValue": "={{ $json.whatsapp }}",
               "rightValue": "",
               "operator": {
                 "type": "string",
@@ -158,7 +210,14 @@
             "Produto de interesse": "={{ $json.produto }}",
             "Faturamento mensal": "={{ $json.faturamento }}",
             "Página": "={{ $json.pagina }}",
-            "Origem": "={{ $json.origem }}"
+            "Origem": "={{ $json.origem }}",
+            "WhatsApp": "={{ $json.whatsapp }}",
+            "Origem do formulário": "={{ $json.form_origem }}",
+            "gclid": "={{ $json.gclid }}",
+            "utm_source": "={{ $json.utm_source }}",
+            "utm_medium": "={{ $json.utm_medium }}",
+            "utm_campaign": "={{ $json.utm_campaign }}",
+            "utm_term": "={{ $json.utm_term }}"
           },
           "matchingColumns": [],
           "schema": [
@@ -237,6 +296,69 @@
             {
               "id": "Origem",
               "displayName": "Origem",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "WhatsApp",
+              "displayName": "WhatsApp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Origem do formulário",
+              "displayName": "Origem do formulário",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "gclid",
+              "displayName": "gclid",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "utm_source",
+              "displayName": "utm_source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "utm_medium",
+              "displayName": "utm_medium",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "utm_campaign",
+              "displayName": "utm_campaign",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "utm_term",
+              "displayName": "utm_term",
               "required": false,
               "defaultMatch": false,
               "display": true,

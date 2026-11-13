@@ -1,16 +1,43 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18480653326"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-18480653326');
-    </script>
     <meta charset="UTF-8" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NKLRLF8Z');</script>
+    <!-- End Google Tag Manager -->
+    <script>
+      // Guarda gclid e UTMs da URL por 90 dias (localStorage) e preenche inputs com esses nomes.
+      (function () {
+        var keys = ['gclid','utm_source','utm_medium','utm_campaign','utm_term'];
+        var p = new URLSearchParams(location.search);
+        keys.forEach(function (k) {
+          var v = p.get(k);
+          if (v) { try { localStorage.setItem(k, JSON.stringify({v: v, t: Date.now()})); } catch (e) {} }
+        });
+        window.getTracking = function () {
+          var out = {};
+          keys.forEach(function (k) {
+            try {
+              var s = JSON.parse(localStorage.getItem(k));
+              if (s && Date.now() - s.t < 90 * 864e5) out[k] = s.v;
+            } catch (e) {}
+          });
+          return out;
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+          var t = window.getTracking();
+          keys.forEach(function (k) {
+            document.querySelectorAll('input[name="' + k + '"]').forEach(function (el) {
+              if (t[k]) el.value = t[k];
+            });
+          });
+        });
+      })();
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -20,6 +47,10 @@
     <title>Estruturart — Soluções financeiras para sua empresa</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKLRLF8Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
