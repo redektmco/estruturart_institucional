@@ -35,8 +35,10 @@ function ContactForm({requested}:{requested:string}) {
     // Campo isca (anti-spam): se vier preenchido, finge sucesso e não envia.
     if (data.website) {setStatus('success');return}
     const email = String(data.email || '')
-    const telefone = String(data.whatsapp || '')
-    const whatsappDigits = telefone.replace(/\D/g, '')
+    const whatsappDigits = String(data.whatsapp || '').replace(/\D/g, '')
+    const telefone = '+55' + whatsappDigits.replace(/^55(?=\d{10,11}$)/, '') // formato +5531999999999
+    const produto = String(data.produto || '')
+    const faturamento = String(data.faturamento || '')
     setStatus('sending')
     try {
       const response = await fetch(WEBHOOK_URL, {
@@ -63,8 +65,12 @@ function ContactForm({requested}:{requested:string}) {
       window.dataLayer.push({
         event: 'lead_enviado',
         form_origem: 'institucional',
-        email: email,
-        telefone: telefone,
+        user_data: {
+          email: email,
+          phone_number: telefone,
+        },
+        lead_faturamento: faturamento,
+        lead_produto: produto,
       })
     } catch {
       setStatus('error')
