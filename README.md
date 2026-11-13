@@ -98,7 +98,7 @@ Até a consulta dos sites ser possível, os conteúdos das soluções partem do 
 
 ## Contatos oficiais
 
-Os dados fornecidos pelo usuário estão centralizados em `src/data/contact.ts` e são compartilhados pelo rodapé e pela página de contato. Email: estruturart@estruturart.com.br. Telefone: (31) 3995-3906. Endereço: Rua Paraíba, 550 - 9° andar - Savassi - Belo Horizonte/MG. Atendimento: segunda a sexta, das 8h às 18h. Email e telefone têm links de ação. O formulário continua demonstrativo; não foi solicitada integração de envio.
+Os dados fornecidos pelo usuário estão centralizados em `src/data/contact.ts` e são compartilhados pelo rodapé e pela página de contato. Email: estruturart@estruturart.com.br. Telefone: (31) 3995-3906. Endereço: Rua Paraíba, 550 - 9° andar - Savassi - Belo Horizonte/MG. Atendimento: segunda a sexta, das 8h às 18h. Email e telefone têm links de ação. O formulário envia os dados por POST (JSON) para um webhook do n8n, que grava na planilha; ver `docs/n8n-workflow-contato.json`.
 
 ## Materiais oficiais recebidos via Dropbox
 
